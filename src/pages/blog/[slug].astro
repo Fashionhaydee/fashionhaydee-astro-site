@@ -1,13 +1,22 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import fs from 'fs'
-import path from 'path'
+import Layout from '@/layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
 
-const { slug } = Astro.params
-const filePath = `./content/pages/${slug}.md`
-const file = await Astro.resolve(filePath)
-const post = await file()
+const { slug } = Astro.params;
+const filePath = `./content/pages/${slug}.md`;
+const file = await Astro.resolve(filePath);
+const post = await file();
 ---
+export async function getStaticPaths() {
+  const contentDir = './content/pages';
+  const files = fs.readdirSync(contentDir);
+  return files
+    .filter(file => file.endsWith('.md'))
+    .map(file => ({
+      params: { slug: path.parse(file).name },
+    }));
+}
 
 <Layout title={post.frontmatter.title}>
   <article>
