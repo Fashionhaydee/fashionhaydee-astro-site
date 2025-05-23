@@ -1,9 +1,8 @@
-
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
+import path from 'path';
 
 export default defineConfig({
-  integrations: [mdx(), sitemap()],
-  site: 'https://fashionhaydee.com',
+  alias: {
+    '@': path.resolve('./src'),
+  },
 });
