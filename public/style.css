@@ -501,3 +501,21 @@ form[name="contact"] .cta-button:hover {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
+#blog-preview {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+#blog-preview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#blog-preview a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+#blog-preview a:hover {
+  color: #0070f3;
+}
