@@ -1,1 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Markdown } from 'astro/components';
+import fs from 'fs';
+import path from 'path';
+
+const { slug } = Astro.params;
+const filePath = `./content/pages/${slug}.md`;
+const file = await Astro.resolve(filePath);
+const post = await file();
+---
+
+<Layout title={post.frontmatter.title}>
+  <article>
+    <h1>{post.frontmatter.title}</h1>
+    <Markdown>{post.content}</Markdown>
+  </article>
+</Layout>
 
