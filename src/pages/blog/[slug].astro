@@ -1,6 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { Markdown } from 'astro/components';
+import Layout from '@/layouts/Layout.astro';
 import fs from 'fs';
 import path from 'path';
 
@@ -13,7 +12,6 @@ const post = await file();
 <Layout title={post.frontmatter.title}>
   <article>
     <h1>{post.frontmatter.title}</h1>
-    <Markdown>{post.content}</Markdown>
+    <div set:html={post.compiledContent()} />
   </article>
 </Layout>
-
