@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pages = await Astro.glob('../../content/pages/*.md');
+---
+<Layout title="Blog | FashionHaydee">
+  <h1>Our Jewelry Stories</h1>
+  <p>Explore design inspirations, custom creations, and behind-the-scenes of our fine jewelry work.</p>
+  <ul>
+    {pages.map(page => (
+      <li>
+        <a href={page.url}>
+          <h2>{page.frontmatter.title}</h2>
+          <p>{page.frontmatter.description}</p>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Layout>
