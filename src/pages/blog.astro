@@ -1,27 +1,8 @@
----
-import Layout from '../layouts/Layout.astro';
-const posts = await Astro.glob('../../content/pages/*.md');
----
-
-<Layout title="Stories | FashionHaydee">
-  <h1>Jewelry Stories</h1>
-  <p>Explore inspirations, symbolic custom charms, and our behind-the-scenes creative process.</p>
-  <ul>
-    {posts.map(({ url, frontmatter }) => (
-      <li>
-        <a href={url}>
-          <h2>{frontmatter.title}</h2>
-          <p>{frontmatter.description}</p>
-        </a>
-      </li>
-    ))}
-  </ul>
 <ul>
   <li>
     <a href="/blog/fortune-meets-form">
-      Fortune Meets Form — The Tarot-Inspired Custom Charm
+      <h2>Fortune Meets Form — The Tarot-Inspired Custom Charm</h2>
+      <p>A reversible tarot card charm capturing symbolism, color, and personal meaning.</p>
     </a>
   </li>
 </ul>
-
-</Layout>
