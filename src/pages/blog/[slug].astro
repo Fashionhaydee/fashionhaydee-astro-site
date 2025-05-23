@@ -1,31 +1,17 @@
 ---
-// 动态文章路径支持（必须）
-import Layout from '@/layouts/Layout.astro';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { Markdown } from 'astro/components';
+import Layout from '@/layouts/Layout.astro'
+import fs from 'fs'
+import path from 'path'
 
-export async function getStaticPaths() {
-  const dirPath = fileURLToPath(new URL('../../../content/pages', import.meta.url));
-  const files = fs.readdirSync(dirPath);
-
-  return files
-    .filter(file => file.endsWith('.md'))
-    .map(file => ({
-      params: { slug: file.replace(/\.md$/, '') },
-    }));
-}
-
-const { slug } = Astro.params;
-const filePath = `../../../content/pages/${slug}.md`;
-const file = await Astro.resolve(filePath);
-const post = await file();
+const { slug } = Astro.params
+const filePath = `./content/pages/${slug}.md`
+const file = await Astro.resolve(filePath)
+const post = await file()
 ---
 
 <Layout title={post.frontmatter.title}>
   <article>
     <h1>{post.frontmatter.title}</h1>
-    <Markdown>{post.content}</Markdown>
+    <div set:html={post.compiledContent()} />
   </article>
 </Layout>
