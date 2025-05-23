@@ -21,3 +21,4 @@ An engraved crystal cluster rising from the earth beneath a crescent moon and st
 💡 Why It Resonates  
 Whether you wear it for protection, for identity, or just for its hypnotic design—the charm is a reminder:  
 "You are the question. And the answer."
+
