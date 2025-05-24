@@ -519,3 +519,16 @@ form[name="contact"] .cta-button:hover {
 #blog-preview a:hover {
   color: #0070f3;
 }
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #333;
+}
