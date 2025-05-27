@@ -146,14 +146,17 @@
   <input name="email" placeholder="Your Email" required type="email" />
   <textarea name="message" placeholder="What do you want to create?" required></textarea>
 
-<label for="attachment" class="file-label">Optional Attachment (not required):</label><br/>
-<label class="custom-file-upload">
-  <input type="file" name="attachment" id="attachment" accept=".jpg,.png,.pdf,.doc,.docx,.zip" />
-  📎 Upload Reference File
+<label for="attachment" style="display: block; text-align: left; margin: 1rem 0 0.5rem; font-weight: 500;">
+  Optional Attachment (not required):
 </label>
-  <button class="cta-button" type="submit">Start Your Design →</button>
-  <input name="_redirect" type="hidden" value="thank-you.html" />
-</form>
+
+<div class="file-upload">
+  <label class="custom-file-upload">
+    📎 Upload Reference File
+    <input type="file" id="attachment" name="attachment" accept=".jpg,.png,.pdf,.docx,.zip" onchange="updateFileName(this)">
+  </label>
+  <span id="file-name">No file selected</span>
+</div>
 
 <p>Prefer email? You can also reach us at <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a></p>
 <p>Or reach out directly:<br/>
