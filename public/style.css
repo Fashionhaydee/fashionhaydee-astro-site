@@ -532,3 +532,22 @@ form[name="contact"] .cta-button:hover {
 .cta-button:hover {
   background-color: #333;
 }
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #333;
+}
