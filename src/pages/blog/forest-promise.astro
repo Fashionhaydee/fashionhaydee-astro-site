@@ -71,17 +71,39 @@ import Layout from '../../layouts/Layout.astro';
     <p><strong>🌳 You Don’t Choose a Ring—You Recognize It</strong><br/> If one of these forest-inspired rings stirred something in you, it might not be a coincidence.</p>
 
     <div style="text-align: center; margin-top: 2rem;">
-      <a href="/#contact" class="cta-button">Start Your Custom Design →</a>
     </div>
   </article>
-<section style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
-  <a href="/#contact" class="cta-button">
-    Start Your Custom Jewelry →
-  </a>
-  <a href="https://wa.me/8615347252138" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="/images/whatsapp-icon-black.png" alt="WhatsApp" style="width: 28px; height: 28px;" />
-  </a>
-</section>
+<style>
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  article figure {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  article figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  article p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+</style>
 <div style="text-align: center; margin-top: 2rem;">
   <a href="/#contact" class="cta-button">Start Your Custom Jewelry →</a>
   <a href="https://wa.me/8615347252138" target="_blank" style="margin-left: 12px;">
@@ -89,5 +111,5 @@ import Layout from '../../layouts/Layout.astro';
   </a>
 </div>
 
-</Layout>
 
+</Layout>
