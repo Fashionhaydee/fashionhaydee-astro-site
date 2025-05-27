@@ -141,13 +141,19 @@
 <section class="contact" id="contact">
 <h2>Contact Us</h2>
 <p>Tell us your idea, and we’ll bring it to life.</p>
-<form action="https://formspree.io/f/xrbqldnv" method="POST">
-<input name="name" placeholder="Your Name" required="" type="text"/>
-<input name="email" placeholder="Your Email" required="" type="email"/>
-<textarea name="message" placeholder="What do you want to create?" required=""></textarea>
-<button class="cta-button" type="submit">Start Your Design →</button>
-<input name="_redirect" type="hidden" value="thank-you.html"/>
+<form action="https://formspree.io/f/xrbqldnv" method="POST" enctype="multipart/form-data">
+  <input name="name" placeholder="Your Name" required type="text" />
+  <input name="email" placeholder="Your Email" required type="email" />
+  <textarea name="message" placeholder="What do you want to create?" required></textarea>
+
+  <!-- 新增上传附件 -->
+  <label for="attachment">Optional Attachment:</label>
+  <input type="file" name="attachment" accept=".jpg,.png,.pdf,.doc,.docx,.zip" />
+
+  <button class="cta-button" type="submit">Start Your Design →</button>
+  <input name="_redirect" type="hidden" value="thank-you.html" />
 </form>
+
 <p>Prefer email? You can also reach us at <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a></p>
 <p>Or reach out directly:<br/>
       Email: <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a><br/>
