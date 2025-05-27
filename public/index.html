@@ -146,9 +146,12 @@
   <input name="email" placeholder="Your Email" required type="email" />
   <textarea name="message" placeholder="What do you want to create?" required></textarea>
 
-  <!-- 新增上传附件 -->
-  <label for="attachment">Optional Attachment:</label>
-  <input type="file" name="attachment" accept=".jpg,.png,.pdf,.doc,.docx,.zip" />
+<label for="attachment" class="file-label">Optional Attachment (not required):</label><br/>
+<label class="custom-file-upload">
+  <input type="file" name="attachment" id="attachment" accept=".jpg,.png,.pdf,.doc,.docx,.zip" />
+  📎 Upload Reference File
+</label>
+
 
   <button class="cta-button" type="submit">Start Your Design →</button>
   <input name="_redirect" type="hidden" value="thank-you.html" />
