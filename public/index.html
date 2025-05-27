@@ -207,5 +207,12 @@
 <a class="whatsapp-icon" href="https://wa.me/8615347252138" target="_blank">
 <img alt="WhatsApp" src="images/whatsapp.png"/>
 </a>
+<script>
+  function updateFileName(input) {
+    const fileName = input.files.length > 0 ? input.files[0].name : 'No file selected';
+    document.getElementById('file-name').textContent = fileName;
+  }
+</script>
+    
 </body>
 </html>
