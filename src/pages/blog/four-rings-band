@@ -1,116 +1,115 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-
-export const metadata = {
-  title: "One Ring, Many Stories: How Band Finishes Change the Soul of a Design",
-  description: "Explore how different gold ring textures—brushed, hammered, high polish, and milgrain—can transform the same jewelry design into entirely different emotional expressions.",
-  pubDate: "2025-05-30",
-  author: "FashionHaydee",
-  image: "/images/blog/ring-finishes-guide-cover.jpg",
-  tags: ["jewelry texture", "ring finishes", "custom ring", "engagement ring design"]
-};
+import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title={metadata.title}>
+<Layout title="Forest Promise: Nature-Inspired Custom Tourmaline Engagement Rings">
+  <article>
+    <h2>🌿 Forest Promise · Choose Your Own Ring</h2>
+    <p><strong>Keywords:</strong> tourmaline engagement ring, forest inspired ring, green tourmaline jewelry, custom tourmaline ring, nature wedding ring, moissanite accent, handcrafted vine ring</p>
 
-# ✨ One Ring, Many Stories: How Band Finishes Change the Soul of a Design
+    <p>In a forest, no two leaves are the same—why should rings be?</p>
+    <p>Introducing the <strong>Forest Promise</strong> series: our signature collection of handcrafted, nature-inspired engagement rings. Each piece features a vibrant green tourmaline—the stone of life, growth, and renewal—set in vine-inspired white gold bands, with shimmering white moissanite accents.</p>
+    <p>These rings aren’t just beautiful—they’re stories waiting to be worn. Which one speaks to you?</p>
 
-## 🌟 Same Design, Four Moods
+    <h3>🌿 Four Designs, Four Stories</h3>
 
-At first glance, all four rings in this image may appear identical—they share the same central motif, gemstone size, and overall shape. But look closer, and you'll realize they *feel* completely different.
+    <h4>🍃 Variation A — The Crowned Leaf</h4>
+    <figure>
+      <img src="/images/1-The Crowned Leaf Ring.png" alt="The Crowned Leaf Ring with moissanite and leaf motif" />
+      <figcaption>Photo 1: The Crowned Leaf design featuring gentle sculpted leaves and dewdrop moissanites.</figcaption>
+    </figure>
+    <p>A floral-sculpted design where the main green tourmaline is flanked by gently sculpted leaves and tiny moissanite dewdrops. Perfect for a bride who finds power in stillness and beauty in quiet growth.</p>
 
-What makes the difference?  
-It’s the **texture**—the finish applied to the ring band.
+    <h4>🍃 Variation B — The Braided Whisper</h4>
+    <figure>
+      <img src="/images/2-The Braided Whisper Ring.png" alt="Braided vine ring with tourmaline center stone" />
+      <figcaption>Photo 2: The Braided Whisper with an elegant vine-twist design.</figcaption>
+    </figure>
+    <p>An elegant vine-twist band encircles the gemstone like a gentle promise. This design is simple yet poetic—like hands folded together under a canopy of trees.</p>
 
-Let’s break down how each finish transforms the ring’s visual tone and emotional meaning.
+    <h4>🍃 Variation C — The Halo Grove</h4>
+    <figure>
+      <img src="/images/3-The Halo Grove Ring.png" alt="Halo setting with green tourmaline and moissanite" />
+      <figcaption>Photo 3: The Halo Grove ring surrounded by a soft moissanite halo.</figcaption>
+    </figure>
+    <p>A soft halo of moissanite surrounds the deep green oval center stone. The band sways with organic curves—like branches in a quiet breeze. Timeless. Luminous. Eternal.</p>
 
-## 💎 High Polish: Classic Elegance
+    <h4>🍃 Variation D — The Climbing Vow</h4>
+    <figure>
+      <img src="/images/4-The Climbing Vow Ring.png" alt="Tourmaline ring with climbing vine setting" />
+      <figcaption>Photo 4: The Climbing Vow features interwoven vines that meet below the gemstone.</figcaption>
+    </figure>
+    <p>Climbing vines meet just beneath the gemstone, growing toward each other. This design feels alive—as if nature itself is making the proposal.</p>
 
-Smooth and reflective, high polish is the most common finish in fine jewelry. It speaks of tradition, luxury, and timelessness.  
-It reflects light brilliantly—but also fingerprints.  
-**Best for**: Classic brides, lovers of timeless design, formal aesthetics.
+    <h3>📖 Real Story: How One Ring Found Its Way Home</h3>
+    <figure>
+      <img src="/images/5-custom ring.png" alt="Client wearing the custom tourmaline ring" />
+      <figcaption>Photo 5: A real client wearing her Climbing Vow ring.</figcaption>
+    </figure>
+    <p>“I was walking through a forest last year, trying to make a decision about my life. I remember looking up at two branches that twisted together in the sky—it felt like a sign. When I saw this ring, with vines meeting just under the stone, it brought me back to that moment.”</p>
 
-→ *Keywords: high polish engagement ring, classic gold ring*
+    <p>That’s the power of personalized design—it’s not about the sparkle. It’s about the story.</p>
 
-## 🌾 Brushed: Subtle Sophistication
+    <h3>🤔 Frequently Asked Questions</h3>
+    <ul>
+      <li><strong>Q:</strong> Can I customize the design (stone size, vines, etc.)?<br/> <strong>A:</strong> Yes! Every ring is made-to-order. We can adjust vines, moissanite placement, or ring shape.</li>
+      <li><strong>Q:</strong> Do you offer other gemstone options besides tourmaline?<br/> <strong>A:</strong> Absolutely. Moss agate, moissanite, sapphire, garnet, spinel, and birthstones available.</li>
+      <li><strong>Q:</strong> Is this suitable as a wedding or engagement ring?<br/> <strong>A:</strong> Yes! It can be a symbolic engagement ring or nature-inspired wedding band.</li>
+      <li><strong>Q:</strong> Can I engrave a message inside?<br/> <strong>A:</strong> Yes—up to 20 characters for free.</li>
+      <li><strong>Q:</strong> Do you ship internationally?<br/> <strong>A:</strong> Yes. Secure tracked shipping worldwide.</li>
+    </ul>
 
-Brushed textures create a soft, directional matte effect. The ring absorbs light instead of reflecting it.  
-It’s understated, warm, and a bit introspective—like a quiet walk in a morning forest.  
-**Best for**: Minimalist souls, nature lovers, quiet confidence.
+    <h3>🛠️ Design Your Own Forest Ring</h3>
+    <p>Want to grow your own design from seed? Choose:</p>
+    <ul>
+      <li><strong>Stone:</strong> Green Tourmaline, Moss Agate, Moissanite, or Birthstone</li>
+      <li><strong>Vine:</strong> Braided Twist, Leafy Garland, Climbing Vines, or Floral Crown</li>
+      <li><strong>Metal:</strong> 925 Silver, 18K White/Yellow/Rose Gold Plated</li>
+      <li><strong>Add-ons:</strong> Side stones, Secret engraving, Matching band</li>
+    </ul>
 
-→ *Keywords: brushed gold ring, subtle wedding band*
+    <p><strong>🌳 You Don’t Choose a Ring—You Recognize It</strong><br/> If one of these forest-inspired rings stirred something in you, it might not be a coincidence.</p>
 
-## 🔨 Hammered: Organic Individuality
+    <div style="text-align: center; margin-top: 2rem;">
+    </div>
+  </article>
+<style>
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
 
-Hammered finishes show gentle dents and surface movement—no two are the same.  
-It feels handmade, raw, and alive.  
-This texture often symbolizes personal growth and uniqueness.  
-**Best for**: Free spirits, handmade lovers, boho weddings.
+  article figure {
+    margin: 2rem auto;
+    text-align: center;
+  }
 
-→ *Keywords: hammered ring finish, organic jewelry texture*
+  article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-## 🪞 Milgrain: Vintage Romance
+  article figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
 
-Milgrain involves tiny beaded edges, often applied by hand.  
-It gives a ring antique charm, often used in Edwardian or Art Deco styles.  
-It feels like a whisper from another era.  
-**Best for**: Vintage lovers, romantic souls, old-world elegance.
+  article p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+</style>
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="/#contact" class="cta-button">Start Your Custom Jewelry →</a>
+  <a href="https://wa.me/8615347252138" target="_blank" style="margin-left: 12px;">
+    <img src="/images/whatsapp-icon-black.png" alt="WhatsApp" style="height: 28px; vertical-align: middle;" />
+  </a>
+</div>
 
-→ *Keywords: milgrain ring band, vintage engagement ring*
-
-## 📖 Real Story: Choosing the Hammered Band
-
-When Elise designed her engagement ring, she knew she didn’t want something "perfect." She wanted something *real*.
-
-> “I’ve had a winding journey—career shifts, living in different cities, healing from loss. The hammered finish reminded me of how growth isn’t smooth—it’s marked by impact. The little dips and dents felt like a celebration of everything I’ve lived through.”
-
-Elise chose a hammered gold band beneath a fleur-de-lis motif, with a moissanite center stone. It wasn’t just a ring—it was her story in metal.
-
-## 🤔 FAQ: Choosing Your Finish
-
-**Q: Can I combine finishes on one ring?**  
-Yes! For example, a high-polish band with a brushed bezel adds contrast.
-
-**Q: Do finishes wear down over time?**  
-Matte textures (like brushed or hammered) may smooth slightly with wear but can be re-finished easily.
-
-**Q: Which is easiest to maintain?**  
-Brushed and hammered finishes hide scratches better. High polish requires more frequent care.
-
-**Q: Can I change the finish later?**  
-Absolutely. We offer **texture transformation services**—from polish to matte, or vice versa.
-
-**Q: Can you match my texture to a vintage family ring?**  
-Yes, we can replicate or complement heirloom finishes upon request.
-
-## 🛠️ Design Your Own Ring Texture
-
-Want to feel bold, quiet, vintage, or unique? Your ring should reflect your soul.
-
-Use our **Design Your Own Ring** process to create something truly yours:
-
-1. **Choose Your Finish**  
-   - High Polish  
-   - Brushed  
-   - Hammered  
-   - Milgrain
-
-2. **Pick Your Center Stone**  
-   - Moissanite  
-   - Tourmaline  
-   - Sapphire  
-   - Birthstone or heirloom gem
-
-3. **Customize the Setting**  
-   - Floral, Art Deco, Vine, Minimalist
-
-4. **Add Personal Touches**  
-   - Hidden message engraving  
-   - Side stones  
-   - Matching bands
-
-📬 [Click here to start your custom consultation](#)
-
----
 
 </Layout>
