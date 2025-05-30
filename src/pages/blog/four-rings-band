@@ -12,140 +12,121 @@ export const metadata = {
 ---
 
 <Layout title={metadata.title}>
+  <article>
+    <h1>✨ One Ring, Many Stories: How Band Finishes Change the Soul of a Design</h1>
 
-# ✨ One Ring, Many Stories: How Band Finishes Change the Soul of a Design
+    <h2>🌟 Same Design, Four Moods</h2>
+    <p>
+      At first glance, all four rings in this image may appear identical—they share the same central motif, gemstone size, and overall shape. But look closer, and you'll realize they <em>feel</em> completely different.
+    </p>
+    <p>
+      What makes the difference? It’s the <strong>texture</strong>—the surface finish applied to the ring band.
+      Texture is more than style—it is the emotional fingerprint of a piece. Just like brushstrokes in a painting, a ring's surface texture can soften, sharpen, or even redefine its entire presence.
+    </p>
 
-## 🌟 Same Design, Four Moods
+    <h3>💎 High Polish: Classic Elegance</h3>
+    <p>
+      Smooth, mirror-like, and brilliant. The high polish finish is the traditional standard in fine jewelry—clean, formal, and timeless.
+    </p>
+    <p>
+      <strong>Emotionally</strong>, high polish speaks of confidence, legacy, and reverence for tradition.
+    </p>
+    <blockquote>“A high polish ring is like a pristine piano note—clean, resonant, and lasting.”</blockquote>
 
-At first glance, all four rings in this image may appear identical—they share the same central motif, gemstone size, and overall shape. But look closer, and you'll realize they *feel* completely different.
+    <h3>🌾 Brushed: Subtle Sophistication</h3>
+    <p>
+      The brushed texture is a soft, matte finish created by running an abrasive tool in one direction across the metal’s surface, forming fine parallel lines. It subtly diffuses light, giving the ring a velvety feel.
+    </p>
+    <p>
+      Brushed finishes evoke tranquility, humility, and intentional simplicity.
+    </p>
+    <blockquote>“It’s the texture of a quiet morning. Still. Unshaken. Thoughtful.”</blockquote>
 
-What makes the difference?  
-It’s the **texture**—the surface finish applied to the ring band.
+    <h3>🔨 Hammered: Organic Individuality</h3>
+    <p>
+      A hammered finish is created by striking the metal with a rounded hammer head to create slight indentations. No two hammer strokes are the same, resulting in a unique surface every time.
+    </p>
+    <p>
+      <strong>For many clients, choosing hammered isn’t about aesthetics. It’s philosophy.</strong>
+    </p>
+    <blockquote>“You don’t just wear a hammered ring. You wear your journey.”</blockquote>
 
-Texture is more than style—it is the emotional fingerprint of a piece.
-Just like brushstrokes in a painting, a ring's surface texture can soften, sharpen, or even redefine its entire presence.
+    <h3>🪞 Milgrain: Vintage Romance</h3>
+    <p>
+      Milgrain comes from the French word <em>mille-grain</em>, meaning “a thousand grains.” It refers to tiny metal beads carefully applied along the edges using a beading tool, popularized in Edwardian and Art Deco periods.
+    </p>
+    <blockquote>“Milgrain is like embroidery in metal. It softens brilliance into memory.”</blockquote>
 
-Let’s explore how each texture not only alters the visual character but also conveys a deeper emotional message—and what it reveals about the wearer.
+    <h2>📖 Real Story: Choosing the Hammered Band</h2>
+    <p>
+      When Elise designed her engagement ring, she wanted something <em>real</em>. The hammered finish reminded her that growth isn’t smooth—it’s marked by impact.
+    </p>
+    <blockquote>
+      “I’ve had a winding journey—career shifts, living in different cities, healing from loss... The little dips and dents felt like a celebration of everything I’ve lived through.”
+    </blockquote>
 
-## 💎 High Polish: Classic Elegance
+    <h2>🖐 Can You See the Difference Without Seeing It?</h2>
+    <p>
+      The <strong>high polish</strong> band catches light like glass.  
+      The <strong>brushed</strong> band absorbs it softly.  
+      The <strong>hammered</strong> one reflects it playfully.  
+      The <strong>milgrain</strong> edge sparkles like vintage lace.
+    </p>
 
-Smooth, mirror-like, and brilliant. The high polish finish is the traditional standard in fine jewelry—clean, formal, and timeless.
+    <h2>🤔 FAQ: Choosing Your Finish</h2>
+    <ul>
+      <li><strong>Can I combine finishes on one ring?</strong> Yes! For contrast and style.</li>
+      <li><strong>Do finishes wear down over time?</strong> Yes, but they can be refreshed.</li>
+      <li><strong>Which hides scratches best?</strong> Brushed and hammered.</li>
+      <li><strong>Can you match vintage textures?</strong> Yes, we can replicate or complement them.</li>
+      <li><strong>Low-maintenance finish?</strong> Brushed and hammered.</li>
+      <li><strong>Can I feel the texture?</strong> Yes—each finish changes the tactile feel.</li>
+    </ul>
 
-This finish is achieved by progressively sanding and buffing the metal until it reflects like glass. It is often chosen for engagement rings because it gives diamonds and other stones maximum light reflection and visual clarity.
+    <h2>🛠️ Design Your Own Ring Texture</h2>
+    <ol>
+      <li><strong>Choose Your Finish:</strong> High Polish, Brushed, Hammered, Milgrain</li>
+      <li><strong>Pick Your Stone:</strong> Moissanite, Tourmaline, Sapphire, Heirloom</li>
+      <li><strong>Customize Setting:</strong> Floral, Art Deco, Vine, Minimalist</li>
+      <li><strong>Add Touches:</strong> Engraving, Side Stones, Matching Bands</li>
+    </ol>
+<style>
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
 
-**Emotionally**, high polish speaks of confidence, legacy, and reverence for tradition. It appeals to those who value structure, formality, and timeless appeal.
+  article figure {
+    margin: 2rem auto;
+    text-align: center;
+  }
 
-> “A high polish ring is like a pristine piano note—clean, resonant, and lasting.”
+  article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-→ *Keywords: high polish engagement ring, classic gold ring*
+  article figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
 
-## 🌾 Brushed: Subtle Sophistication
+  article p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+</style>
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="/#contact" class="cta-button">Start Your Custom Jewelry →</a>
+  <a href="https://wa.me/8615347252138" target="_blank" style="margin-left: 12px;">
+    <img src="/images/whatsapp-icon-black.png" alt="WhatsApp" style="height: 28px; vertical-align: middle;" />
+  </a>
+</div>
 
-The brushed texture is a soft, matte finish created by running an abrasive tool in a single direction across the metal’s surface, forming fine parallel lines. This technique subtly diffuses light, giving the ring a velvety feel—both visually and physically.
-
-Often chosen by minimalists and creatives, brushed textures don’t scream for attention. Instead, they whisper. They carry an air of quiet refinement, perfect for wearers who favor presence over spectacle.
-
-In design psychology, brushed finishes evoke tranquility, humility, and intentional simplicity.
-
-> “It’s the texture of a quiet morning. Still. Unshaken. Thoughtful.”
-
-→ *Keywords: brushed gold ring, subtle wedding band*
-
-## 🔨 Hammered: Organic Individuality
-
-A hammered finish is created by striking the metal with a rounded hammer head to create slight indentations. No two hammer strokes are the same, resulting in a unique surface every time.
-
-Historically, this texture finds its roots in the **Arts and Crafts Movement** of the late 19th century, which celebrated the maker’s hand and rejected mass production. In that tradition, hammered rings feel alive—textured by time, effort, and the individuality of the artisan.
-
-The surface plays with light in a playful, irregular rhythm, reflecting the imperfect, raw beauty of nature and the human spirit.
-
-**For many clients, choosing hammered isn’t about aesthetics. It’s philosophy.**
-
-> “You don’t just wear a hammered ring. You wear your journey.”
-
-→ *Keywords: hammered ring finish, organic jewelry texture*
-
-## 🪞 Milgrain: Vintage Romance
-
-Milgrain comes from the French word *mille-grain*, meaning “a thousand grains.” It refers to a decorative technique where tiny metal beads are carefully applied along the edges of the ring using a beading tool.
-
-Popularized in the **Edwardian** and **Art Deco** periods, milgrain carries an air of vintage refinement. It was originally used to soften the sparkle of diamonds and mimic the lace detailing of garments in that era.
-
-Milgrain rings are cherished by those with nostalgic hearts—those who believe romance lives in the details.
-
-> “Milgrain is like embroidery in metal. It softens brilliance into memory.”
-
-→ *Keywords: milgrain ring band, vintage engagement ring*
-
-## 📖 Real Story: Choosing the Hammered Band
-
-When Elise designed her engagement ring, she knew she didn’t want something "perfect." She wanted something *real*.
-
-> “I’ve had a winding journey—career shifts, living in different cities, healing from loss. The hammered finish reminded me of how growth isn’t smooth—it’s marked by impact. The little dips and dents felt like a celebration of everything I’ve lived through.”
-
-Elise chose a hammered gold band beneath a fleur-de-lis motif, with a moissanite center stone. It wasn’t just a ring—it was her story in metal.
-
-## 🖐 Can You See the Difference Without Seeing It?
-
-Imagine this:
-
-Four rings on a hand—each identical in form, yet each telling a different story.
-
-The **high polish** band catches the light like glass, smooth and uninterrupted.  
-The **brushed** ring gently absorbs light, its surface soft like silk.  
-The **hammered** one dances—irregular flashes shimmer across the tiny dips and curves.  
-And the **milgrain** edge? A delicate frame of beaded light—vintage lace in gold.
-
-You don’t need a picture. You already see them.
-
-## 🤔 FAQ: Choosing Your Finish
-
-**Q: Can I combine finishes on one ring?**  
-Yes! For example, a high-polish band with a brushed bezel or milgrain edges can create striking contrast.
-
-**Q: Do finishes wear down over time?**  
-Matte textures (like brushed or hammered) may become smoother with regular wear. High polish may dull. All finishes can be refreshed during a professional cleaning.
-
-**Q: Which finish hides scratches best?**  
-Brushed and hammered finishes are excellent at concealing signs of wear, making them practical for everyday rings.
-
-**Q: Can you match my texture to a vintage family ring?**  
-Yes, we can replicate heirloom textures or create complementary finishes for paired bands.
-
-**Q: What’s the most low-maintenance finish?**  
-Hammered and brushed are most forgiving. High polish requires more upkeep to maintain shine.
-
-**Q: Can I feel the texture when I wear it?**  
-Yes! Texture changes the tactile experience—matte finishes feel more velvety, hammered has a natural grip, and polished feels slick.
-
-## 🛠️ Design Your Own Ring Texture
-
-Want to feel bold, quiet, vintage, or unique? Your ring should reflect your soul.
-
-Use our **Design Your Own Ring** process to create something truly yours:
-
-1. **Choose Your Finish**  
-   - High Polish  
-   - Brushed  
-   - Hammered  
-   - Milgrain
-
-2. **Pick Your Center Stone**  
-   - Moissanite  
-   - Tourmaline  
-   - Sapphire  
-   - Birthstone or heirloom gem
-
-3. **Customize the Setting**  
-   - Floral, Art Deco, Vine, Minimalist
-
-4. **Add Personal Touches**  
-   - Hidden message engraving  
-   - Side stones  
-   - Matching bands
-
-📬 [Click here to start your custom consultation](#)
-
----
-
+  </article>
 </Layout>
