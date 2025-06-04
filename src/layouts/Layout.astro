@@ -8,10 +8,22 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
+
   <body>
     <main>
       <slot />
     </main>
+
+    <!-- ✅ 悬浮按钮：浮动在页面右下角 -->
+    <div class="floating-buttons">
+      <a href="/" class="fab-button" title="Back to Home">
+        <img src="/images/home-icon.png" alt="Home" />
+      </a>
+      <a href="https://wa.me/8615347252138" class="fab-button" title="Contact on WhatsApp">
+        <img src="/images/whatsapp-icon-black.png" alt="WhatsApp" />
+      </a>
+    </div>
   </body>
 </html>
+
 
