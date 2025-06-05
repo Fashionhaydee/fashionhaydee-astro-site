@@ -1,8 +1,31 @@
-<ul>
-  <li>
-    <a href="/blog/fortune-meets-form/">
-      <h2>Fortune Meets Form — The Tarot-Inspired Custom Charm</h2>
-      <p>A reversible tarot card charm capturing symbolism, color, and personal meaning.</p>
-    </a>
-  </li>
-</ul>
+---
+// src/pages/blog.astro
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const byCategory = {};
+
+for (const post of allPosts) {
+  const cat = post.data.category ?? 'Uncategorized';
+  if (!byCategory[cat]) byCategory[cat] = [];
+  byCategory[cat].push(post);
+}
+---
+
+<Layout title="Jewelry Blog">
+  <h1>Jewelry Journal · Explore by Theme</h1>
+  {Object.entries(byCategory).map(([category, posts]) => (
+    <section>
+      <h2>{category}</h2>
+      <ul>
+        {posts.map((post) => (
+          <li>
+            <a href={post.url}><strong>{post.data.title}</strong></a><br/>
+            <p>{post.data.summary}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Layout>
