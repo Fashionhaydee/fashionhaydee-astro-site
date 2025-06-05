@@ -8,9 +8,34 @@ const posts = Object.entries(postImports).map(([path, mod]) => ({
   ...mod.frontmatter
 }));
 
-const byCategory = {};
+---
+import Layout from '../layouts/Layout.astro';
 
-for (const post of posts) {
+// ✅ 批量导入文章
+const postImports = import.meta.glob('./blog/*.astro', { eager: true });
+
+const allPosts = Object.entries(postImports).map(([path, mod]) => ({
+  url: path.replace('./', '/blog/').replace('.astro', ''),
+  ...mod.frontmatter
+}));
+
+// ✅ 按发布日期排序（你文章必须含有 date 字段）
+allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+// ✅ 分页参数
+const PAGE_SIZE = 5;
+const page = Astro.url.searchParams.get('page') ?? '1';
+const currentPage = parseInt(page);
+const start = (currentPage - 1) * PAGE_SIZE;
+const end = start + PAGE_SIZE;
+const paginatedPosts = allPosts.slice(start, end);
+
+// ✅ 总页数（用于按钮）
+const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+
+// ✅ 分类处理：分页后的文章再按分类分组
+const byCategory = {};
+for (const post of paginatedPosts) {
   const cat = post.category ?? 'Uncategorized';
   if (!byCategory[cat]) byCategory[cat] = [];
   byCategory[cat].push(post);
@@ -19,6 +44,7 @@ for (const post of posts) {
 
 <Layout title="Jewelry Blog">
   <h1>Jewelry Journal · Explore by Theme</h1>
+
   {Object.entries(byCategory).map(([category, posts]) => (
     <section>
       <h2>{category}</h2>
@@ -32,4 +58,20 @@ for (const post of posts) {
       </ul>
     </section>
   ))}
+
+  <!-- ✅ 分页导航 -->
+  <nav style="margin-top: 2rem;">
+    {Array.from({ length: totalPages }).map((_, i) => {
+      const pageNum = i + 1;
+      const isActive = pageNum === currentPage;
+      return (
+        <a
+          href={`/blog?page=${pageNum}`}
+          style={`margin-right: 1rem; font-weight: ${isActive ? 'bold' : 'normal'};`}
+        >
+          {pageNum}
+        </a>
+      );
+    })}
+  </nav>
 </Layout>
