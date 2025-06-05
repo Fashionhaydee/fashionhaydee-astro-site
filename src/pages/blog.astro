@@ -1,13 +1,17 @@
 ---
-// src/pages/blog.astro
 import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
 
-const allPosts = await getCollection('blog');
+const postImports = import.meta.glob('./blog/*.astro', { eager: true });
+
+const posts = Object.values(postImports).map((mod) => ({
+  url: mod.url,
+  ...mod.frontmatter
+}));
+
 const byCategory = {};
 
-for (const post of allPosts) {
-  const cat = post.data.category ?? 'Uncategorized';
+for (const post of posts) {
+  const cat = post.category ?? 'Uncategorized';
   if (!byCategory[cat]) byCategory[cat] = [];
   byCategory[cat].push(post);
 }
@@ -21,8 +25,8 @@ for (const post of allPosts) {
       <ul>
         {posts.map((post) => (
           <li>
-            <a href={post.url}><strong>{post.data.title}</strong></a><br/>
-            <p>{post.data.summary}</p>
+            <a href={post.url}><strong>{post.title}</strong></a><br/>
+            <p>{post.summary}</p>
           </li>
         ))}
       </ul>
