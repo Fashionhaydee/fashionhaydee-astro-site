@@ -9,8 +9,27 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/content.html">Stories</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <slot />
     </main>
+
+    <footer style="text-align: center; font-size: 0.8rem; margin-top: 2rem;">
+      &copy; {new Date().getFullYear()} FashionHaydee. All rights reserved.
+    </footer>
   </body>
 </html>
