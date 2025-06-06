@@ -3,38 +3,29 @@ import Layout from '../layouts/Layout.astro';
 
 const postImports = import.meta.glob('./blog/*.astro', { eager: true });
 
-let allPosts = Object.entries(postImports).map(([path, mod]) => ({
-  url: path.replace('./', '/blog/').replace('.astro', ''),
-  ...mod.frontmatter
-}));
+const allPosts = Object.entries(postImports)
+  .map(([path, mod]) => ({
+    url: path.replace('./', '/blog/').replace('.astro', ''),
+    ...mod.frontmatter
+  }))
+  .filter(post => post.category && post.title && post.summary);
 
-// ✅ 排序：按日期新到旧
-allPosts = allPosts
-  .filter(post => post.date) // 排除没写日期的文章
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+// ✅ 按日期新到旧
+allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// ✅ 分页配置
-const PAGE_SIZE = 5;
-const page = Astro.url.searchParams.get('page') ?? '1';
-const currentPage = parseInt(page);
-const start = (currentPage - 1) * PAGE_SIZE;
-const end = start + PAGE_SIZE;
-const paginatedPosts = allPosts.slice(start, end);
-const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
-
-// ✅ 分类处理：只对当前页的文章进行分组
-const paginatedGrouped = {};
-for (const post of paginatedPosts) {
-  const cat = post.category ?? 'Uncategorized';
-  if (!paginatedGrouped[cat]) paginatedGrouped[cat] = [];
-  paginatedGrouped[cat].push(post);
+// ✅ 分类聚合：按 category 分组
+const groupedByCategory = {};
+for (const post of allPosts) {
+  const category = post.category ?? 'Uncategorized';
+  if (!groupedByCategory[category]) groupedByCategory[category] = [];
+  groupedByCategory[category].push(post);
 }
 ---
 
 <Layout title="Jewelry Blog">
   <h1>Jewelry Journal · Explore by Theme</h1>
 
-  {Object.entries(paginatedGrouped).map(([category, posts]) => (
+  {Object.entries(groupedByCategory).map(([category, posts]) => (
     <section>
       <h2>{category}</h2>
       <ul>
@@ -47,19 +38,4 @@ for (const post of paginatedPosts) {
       </ul>
     </section>
   ))}
-
-  <nav style="margin-top: 2rem;">
-    {Array.from({ length: totalPages }).map((_, i) => {
-      const pageNum = i + 1;
-      const isCurrent = pageNum === currentPage;
-      return (
-        <a
-          href={`/blog?page=${pageNum}`}
-          style={`margin-right: 0.5rem; font-weight: ${isCurrent ? 'bold' : 'normal'};`}
-        >
-          {pageNum}
-        </a>
-      );
-    })}
-  </nav>
 </Layout>
