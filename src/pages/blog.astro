@@ -48,21 +48,20 @@ for (const post of paginatedPosts) {
  <Layout title="Jewelry Blog">
   <h1>Jewelry Journal · Explore by Theme</h1>
 
-  {Object.entries(byCategory).map(([category, posts]) => {
-    return (
-      <section>
-        <h2>{category}</h2>
-        <ul>
-          {posts.map((post) => (
-            <li>
-              <a href={post.url}><strong>{post.title}</strong></a><br/>
-              <p>{post.summary}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    );
-  })}
+{Object.entries(byCategory).map(([category, posts]) => (
+  <section>
+    <h2>{category}</h2>
+    <ul>
+      {posts.map((post) => (
+        <li>
+          <a href={post.url}><strong>{post.title}</strong></a><br/>
+          <p>{post.summary}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+))}
+
 
   <!-- ✅ 分页导航 -->
   <nav style="margin-top: 2rem;">
