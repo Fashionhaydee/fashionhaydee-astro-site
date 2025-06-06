@@ -5,13 +5,13 @@ const postImports = import.meta.glob('./blog/*.astro', { eager: true });
 
 const allPosts = Object.entries(postImports).map(([path, mod]) => ({
   url: path.replace('./', '/blog/').replace('.astro', ''),
-  ...mod.frontmatter
+  ...(mod.frontmatter || {}), // ✅ 防止为空
 }));
 
-// ✅ 按日期排序（确保文章含 date 字段）
+// ✅ 按日期排序
 allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// ✅ 分页处理
+// ✅ 分页
 const PAGE_SIZE = 5;
 const page = Astro.url.searchParams.get('page') ?? '1';
 const currentPage = parseInt(page);
@@ -20,10 +20,10 @@ const end = start + PAGE_SIZE;
 const paginatedPosts = allPosts.slice(start, end);
 const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
 
-// ✅ 分类聚合
+// ✅ 分类
 const byCategory = {};
 for (const post of paginatedPosts) {
-  const cat = post.category ?? 'Uncategorized';
+  const cat = post?.category?.trim() || 'Uncategorized';
   if (!byCategory[cat]) byCategory[cat] = [];
   byCategory[cat].push(post);
 }
