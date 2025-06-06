@@ -45,31 +45,34 @@ for (const post of paginatedPosts) {
 <Layout title="Jewelry Blog">
   <h1>Jewelry Journal · Explore by Theme</h1>
 
+ <Layout title="Jewelry Blog">
+  <h1>Jewelry Journal · Explore by Theme</h1>
+
   {Object.entries(byCategory).map(([category, posts]) => {
-  return (
-    <section>
-      <h2>{category}</h2>
-      <ul>
-        {posts.map((post) => (
-          <li>
-            <a href={post.url}><strong>{post.title}</strong></a><br/>
-            <p>{post.summary}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
-);
-  ))}
+    return (
+      <section>
+        <h2>{category}</h2>
+        <ul>
+          {posts.map((post) => (
+            <li>
+              <a href={post.url}><strong>{post.title}</strong></a><br/>
+              <p>{post.summary}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
 
   <!-- ✅ 分页导航 -->
   <nav style="margin-top: 2rem;">
     {Array.from({ length: totalPages }).map((_, i) => {
       const pageNum = i + 1;
-      const isActive = pageNum === currentPage;
+      const isCurrent = pageNum === currentPage;
       return (
         <a
           href={`/blog?page=${pageNum}`}
-          style={`margin-right: 1rem; font-weight: ${isActive ? 'bold' : 'normal'};`}
+          style={`margin-right: 0.5rem; font-weight: ${isCurrent ? 'bold' : 'normal'};`}
         >
           {pageNum}
         </a>
