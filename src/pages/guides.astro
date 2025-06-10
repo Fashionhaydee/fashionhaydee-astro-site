@@ -1,1 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// 自动导入所有 guides 文章
+const guideImports = import.meta.glob('./guides/*.astro', { eager: true });
+
+const allGuides = Object.entries(guideImports)
+  .map(([path, mod]) => ({
+    url: path.replace('./guides/', '/guides/').replace('.astro', ''),
+    ...mod.frontmatter,
+  }))
+  .filter(post => post.title && post.summary && post.image);
+---
+
+<Layout title="Jewelry Guides · Learn Before You Buy">
+  <h1>Jewelry Guides</h1>
+  <p>Learn how to choose meaningful custom jewelry with our SEO-backed guides. From gemstone rings to symbolic designs — we help you understand what truly matters.</p>
+
+  <section class="guide-list">
+    {allGuides.map(guide => (
+      <article class="guide-card">
+        <img src={guide.image} alt={guide.alt || guide.title} loading="lazy" />
+        <h2>{guide.title}</h2>
+        <p>{guide.summary}</p>
+        <a href={guide.url} class="read-button">Read Guide</a>
+      </article>
+    ))}
+  </section>
+
+  <style>
+    .guide-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .guide-card {
+      border: 1px solid #eee;
+      padding: 1rem;
+      text-align: center;
+    }
+    .guide-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .read-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</Layout>
 
