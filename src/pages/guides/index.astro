@@ -1,1 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import leafImg from "@/public/images/图片1.png";
+---
+
+<Layout title="Jewelry Guides">
+  <section class="py-10 px-6 max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Jewelry Guides</h1>
+    <p class="mb-10 text-gray-700 max-w-2xl">
+      Learn how to choose meaningful custom jewelry with our SEO-backed guides.
+      From gemstone rings to symbolic designs — we help you understand what truly matters.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="border rounded-lg overflow-hidden shadow-sm">
+        <img src={leafImg.src} alt="Leaf Engagement Ring Guide" class="w-full h-60 object-cover" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-gray-900">
+            <a href="/guides/leaf-engagement-ring">Leaf Engagement Rings: A Nature-Inspired Symbol of Love</a>
+          </h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Discover why leaf and vine designs speak to nature lovers, and how to customize a meaningful ring
+            with moss agate, moissanite, or vintage motifs.
+          </p>
+          <a href="/guides/leaf-engagement-ring" class="inline-block mt-4 px-4 py-2 bg-black text-white text-sm rounded hover:bg-gray-800">Read Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
 
