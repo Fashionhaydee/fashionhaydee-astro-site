@@ -304,18 +304,21 @@ export const frontmatter = {
     padding: 1.5rem;
   }
 
-  article figure {
-    margin: 2rem auto;
-    text-align: center;
-  }
+article figure {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 600px; 
+}
 
-  article img {
-    max-width: 100%;
-    height: auto;
-    width: 90%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+article img {
+  display: block;
+  width: 100%; 
+  height: auto;
+  max-width: 100%; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
   article figcaption {
     font-size: 0.9rem;
     color: #666;
