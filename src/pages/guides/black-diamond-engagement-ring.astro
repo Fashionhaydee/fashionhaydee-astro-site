@@ -208,17 +208,54 @@ export const frontmatter = {
   </script>
 </article>
 
-<style>
-/* Page-scoped UX enhancements */
-.keypoints{
-  background:#fef9f4;border:1px solid #f2e4cd;border-radius:12px;
-  padding:14px 16px;margin:16px 0;font-size:.98rem;line-height:1.65
+ <style>
+     article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+article figure {
+  margin: 2rem auto;
+  text-align: center;
+  max-width:450px; 
 }
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
-.cta-button{display:inline-block;padding:12px 18px;border-radius:8px;
-  text-decoration:none;font-weight:600}
-.cta-button--primary{background:#000;color:#fff}
-.cta-button--whatsapp{background:#25D366;color:#fff}
-@media (max-width:720px){.cta{flex-direction:column}.cta-button{width:100%;text-align:center}}
-</style>
+
+article img {
+  display: block;
+  width: 100%; 
+  height: auto;
+  max-width: 100%; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+  article figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  article p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+    .lede{font-size:1.05rem;line-height:1.7}
+    .toc{background:#faf9f7;border:1px solid #eee;border-radius:8px;padding:.75rem 1rem;margin:1rem 0}
+    .toc a{text-decoration:none}
+    .cta a{font-weight:600}
+    figure{margin:1.25rem 0}
+    figcaption{font-size:.9rem;color:#666}
+    table{border-collapse:collapse;width:100%;margin:1rem 0}
+    th,td{border:1px solid #eee;padding:.6rem .7rem;vertical-align:top}
+    .cols{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .resources ul{margin:.25rem 0 .5rem 1.2rem}
+  </style>
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="/#contact" class="cta-button">Start Your Custom Jewelry →</a>
+  <a href="https://wa.me/8615347252138" target="_blank" style="margin-left: 12px;">
+    <img src="/images/whatsapp-icon-black.png" alt="WhatsApp" style="height: 28px; vertical-align: middle;" />
+  </a>
+</div>
 </Layout>
