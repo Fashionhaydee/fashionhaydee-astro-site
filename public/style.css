@@ -585,3 +585,31 @@ input[type="file"] {
 .fab-button img:hover {
   transform: scale(1.1);
 }
+/* --- Promise Bar fixes --- */
+.promise-bar{ max-width:100%; }            /* 让整条承诺条占满右栏 */
+.promise-bar .label span{
+  white-space: normal;                     /* 允许换行 */
+  overflow: visible;
+  text-overflow: clip;
+}
+.promise-bar .label strong{ font-size:1rem; }
+.promise-bar{ padding: 0.9rem 1rem; }      /* 右栏窄时，压缩内边距一点 */
+/* --- Hero layout tightening --- */
+.banner{
+  display: grid;
+  grid-template-columns: minmax(0, 55%) minmax(0, 45%);  /* 左55% 图 / 右45% 文案 */
+  align-items: center;
+  column-gap: 24px;                                      /* 缩小中间空隙 */
+}
+
+/* 兼容一些主题给右列加了多余的左边距/内边距的情况 */
+.banner-right{ margin-left: 0 !important; padding-left: 0 !important; }
+
+/* 确保左侧大图自适应，不会撑开布局 */
+.banner-left img{ width:100%; height:auto; display:block; }
+
+/* 移动端堆叠 */
+@media (max-width: 960px){
+  .banner{ grid-template-columns: 1fr; row-gap: 16px; }
+  .promise-bar{ margin-top: .5rem; }
+}
