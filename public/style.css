@@ -672,3 +672,9 @@ input[type="file"] {
   padding:8px 10px 2px; color:#6b7280; font-size:.95rem;
 }
 .fh-cta-footer__contact a{ color:#374151; text-decoration:underline; text-underline-offset:3px; }
+.breadcrumbs{
+  display:flex; flex-wrap:wrap; gap:.4rem; align-items:center;
+  font-size:.92rem; color:#6b7280; margin:.25rem 0 .75rem;
+}
+.breadcrumbs a{ color:#374151; text-decoration:underline; text-underline-offset:3px; }
+.breadcrumbs span[aria-hidden="true"]{ color:#9ca3af; }
