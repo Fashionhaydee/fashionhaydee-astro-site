@@ -607,3 +607,29 @@ input[type="file"] {
   .promise-chips .chip{ border-color:#2a2a2a; background:#111; color:#e5e7eb; }
   .promise-chips .chip b{ color:#fff; }
 }
+/* Primary / Secondary look */
+.cta-button{ 
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: .9rem 1.2rem; border-radius:12px; font-weight:700;
+  transition:transform .06s ease, box-shadow .2s ease; will-change:transform;
+}
+.cta-primary{ background:#111; color:#fff; }
+.cta-primary:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,.12); }
+.cta-wa{ background:#25D366; color:#fff; margin-left:.8rem; }
+.cta-wa:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(37,211,102,.28); }
+
+/* 让按钮与“chips”更紧凑 */
+.banner-right .promise-chips{ margin-top:.55rem; }
+/* Mobile sticky CTA bar */
+.mobile-cta{
+  position:fixed; left:0; right:0; bottom:0; z-index:50;
+  display:none; gap:.6rem; padding:.6rem .8rem; background:rgba(255,255,255,.96);
+  box-shadow:0 -8px 24px rgba(0,0,0,.08); backdrop-filter:blur(6px);
+}
+.mobile-cta__btn{
+  flex:1 1 0; display:inline-flex; align-items:center; justify-content:center;
+  padding:.8rem 1rem; border-radius:12px; font-weight:700; background:#111; color:#fff;
+}
+.mobile-cta__btn--wa{ background:#25D366; }
+@media (max-width: 820px){ .mobile-cta{ display:flex; } }
+@media (min-width: 821px){ .mobile-cta{ display:none; } }
