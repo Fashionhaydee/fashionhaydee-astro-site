@@ -120,8 +120,12 @@
   <div class="banner-right">
     <h1>Bespoke Jewelry, Crafted Around Your Story</h1>
     <p>From a whispered idea to a sparkling reality — I help you create custom rings, necklaces, and meaningful gifts in silver or gold, wherever you are in the world.</p>
-    <a class="cta-button" href="#contact">Start Your Custom Project</a>
-    <a class="cta-button" href="https://wa.me/8615347252138" style="margin-left: 1rem; background-color: #25D366;" target="_blank">Chat on WhatsApp</a>
+<a class="cta-button cta-primary" id="cta-quote" href="#contact" aria-label="Get my custom jewelry quote in 3 quick steps">Get My Quote (3 Steps)</a>
+
+<a class="cta-button cta-wa" id="cta-wa" 
+   href="https://wa.me/8615347252138" target="_blank" rel="noopener"
+   aria-label="Chat on WhatsApp instantly">Chat on WhatsApp (Instant)</a>
+
 <!-- Commitment Chips (compact) -->
 <div class="promise-chips" aria-label="Key service commitments">
   <span class="chip">
@@ -311,7 +315,35 @@
     const fileName = input.files.length > 0 ? input.files[0].name : 'No file selected';
     document.getElementById('file-name').textContent = fileName;
   }
+<div class="mobile-cta" role="region" aria-label="Quick actions">
+  <a href="#contact" class="mobile-cta__btn">Get My Quote</a>
+  <a href="https://wa.me/8615347252138?text=Hi%20Haydee!%20Quick%20quote%20please.&utm_source=website&utm_medium=sticky&utm_campaign=mobile_bar" 
+     class="mobile-cta__btn mobile-cta__btn--wa" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
 </script>
-    
+ <script>
+(function(){
+  // 1) 给 WhatsApp 自动附加 UTM & 预填开场白
+  var wa = document.getElementById('cta-wa');
+  if (wa){
+    var base = 'https://wa.me/8615347252138';
+    var text = encodeURIComponent("Hi Haydee! I'd like a quick quote for a custom piece. My budget is ____ and I prefer ____ metal with ____ stone.");
+    var utm  = 'utm_source=website&utm_medium=hero&utm_campaign=home_hero';
+    wa.href = base + '?text=' + text + '&' + utm;
+  }
+
+  // 2) 轻量点击追踪（支持 GA4 且不报错的安全写法）
+  function track(action, label){
+    if (window.gtag){ gtag('event', action, { event_category: 'CTA', event_label: label }); }
+    // 无埋点时也记一条，方便你在控制台看
+    else { console.log('[CTA]', action, label); }
+  }
+  var quoteBtn = document.getElementById('cta-quote');
+  if (quoteBtn){ quoteBtn.addEventListener('click', function(){ track('click_quote','hero'); }); }
+  if (wa){ wa.addEventListener('click', function(){ track('click_whatsapp','hero'); }); }
+})();
+</script>
+   
 </body>
 </html>
