@@ -633,3 +633,13 @@ input[type="file"] {
 .mobile-cta__btn--wa{ background:#25D366; }
 @media (max-width: 820px){ .mobile-cta{ display:flex; } }
 @media (min-width: 821px){ .mobile-cta{ display:none; } }
+/* Ask-for-Quote 按钮样式（Gallery卡片下的小按钮） */
+.ask-quote{
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.55rem .8rem; margin-top:.5rem;
+  border:1px solid #e5e7eb; border-radius:12px; background:#fff;
+  font-weight:600; color:#111; text-decoration:none;
+  transition:box-shadow .2s, transform .06s;
+}
+.ask-quote:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,.1); }
+.ask-quote svg{ width:16px; height:16px; display:block; }
