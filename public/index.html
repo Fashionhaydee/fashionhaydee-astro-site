@@ -344,6 +344,76 @@
   if (wa){ wa.addEventListener('click', function(){ track('click_whatsapp','hero'); }); }
 })();
 </script>
+<script>
+(function(){
+  /* ---------- A) 图片性能优化 ---------- */
+  // 1) 非首屏图片：统一 lazy + async 解码（跳过首屏Hero与Logo）
+  const heroImg = document.querySelector('.banner-left img'); // 你的首屏大图
+  document.querySelectorAll('img').forEach((img, i)=>{
+    const isHero = (img === heroImg) || img.closest('.banner-left');
+    const isLogo = img.closest('header, .site-header, .navbar');
+    if (isHero || isLogo) return;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    // 有尺寸就写上，避免布局抖动（没拿到自然宽高也没关系，会跳过）
+    if (!img.getAttribute('width') && img.naturalWidth)  img.setAttribute('width', img.naturalWidth);
+    if (!img.getAttribute('height') && img.naturalHeight) img.setAttribute('height', img.naturalHeight);
+  });
+  // 2) 首屏Hero优先加载
+  if (heroImg){
+    heroImg.setAttribute('fetchpriority','high');
+    heroImg.decoding = 'async';
+  }
+
+  /* ---------- B) Gallery 自动注入 “Get Quote for This Design” ---------- */
+  // 说明：自动在 #gallery 里的每个卡片下方插入按钮；标题取 img.alt，图片取 img.src
+  const gallery = document.querySelector('#gallery');
+  if (!gallery) return; // 没找到就跳过（你的 gallery 在首页别的ID的话，只改这里的选择器）
+
+  // 常见卡片容器：.service-card / figure / .card，三选一都兼容
+  const cards = gallery.querySelectorAll('.service-card, figure, .card');
+  cards.forEach(card=>{
+    const img = card.querySelector('img');
+    if (!img) return;
+
+    // 取标题：优先 alt；没有就用文件名
+    const title = (img.getAttribute('alt') || (img.src.split('/').pop() || 'Gallery design')).trim();
+    const imageUrl = img.currentSrc || img.src;
+
+    // 创建按钮（避免重复注入）
+    if (card.querySelector('.ask-quote')) return;
+    const btn = document.createElement('a');
+    btn.className = 'ask-quote';
+    btn.href = '#';
+    btn.setAttribute('data-title', title);
+    btn.setAttribute('data-image', imageUrl);
+    btn.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Get Quote for This Design
+    `;
+
+    // 插入到卡片末尾（如果你卡片有描述/标题，按钮会在它们下面）
+    card.appendChild(btn);
+  });
+
+  // 绑定点击：跳到 WhatsApp，自动带上图片/标题/来源页
+  gallery.addEventListener('click', function(e){
+    const a = e.target.closest('.ask-quote');
+    if (!a) return;
+    e.preventDefault();
+    const title = a.getAttribute('data-title') || document.title;
+    const img   = a.getAttribute('data-image') || '';
+    const page  = location.origin + location.pathname + '#gallery';
+    const text  = encodeURIComponent(
+      `Hi Haydee! I’d like a quote for this design.\nTitle: ${title}\nImage: ${img}\nFrom: ${page}\nBudget: ____  Metal: ____  Stone: ____\nTimeline: ____`
+    );
+    const utm   = 'utm_source=website&utm_medium=gallery&utm_campaign=ask_for_quote';
+    location.href = `https://wa.me/8615347252138?text=${text}&${utm}`;
+  });
+})();
+</script>
    
 </body>
 </html>
