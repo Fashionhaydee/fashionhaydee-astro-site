@@ -334,6 +334,20 @@
   if (wa){ wa.addEventListener('click', function(){ track('click_whatsapp','hero'); }); }
 })();
 </script>
+<script>
+(function(){
+  // 给 footer 的 WhatsApp 按钮加 UTM + 预填开场白；加简易点击日志
+  const wa = document.getElementById('fh-cta-wa');
+  if(wa){
+    const text = encodeURIComponent("Hi Haydee! I'd like a quick quote for a custom piece.");
+    const utm  = "utm_source=website&utm_medium=footer&utm_campaign=footer_cta";
+    wa.href = "https://wa.me/8615347252138?text="+text+"&"+utm;
+  }
+  const quote = document.getElementById('fh-cta-quote');
+  function log(el, name){ if(!el) return; el.addEventListener('click',()=>{ if(window.gtag){ gtag('event','click_'+name,{event_category:'CTA',event_label:'footer'}); } else { console.log('[CTA] footer', name); } }); }
+  log(quote,'quote'); log(wa,'whatsapp');
+})();
+</script>
   
 </body>
 </html>
