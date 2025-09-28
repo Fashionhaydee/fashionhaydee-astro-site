@@ -585,47 +585,25 @@ input[type="file"] {
 .fab-button img:hover {
   transform: scale(1.1);
 }
-/* --- Promise Bar fixes --- */
-.promise-bar{ max-width:100%; }            /* 让整条承诺条占满右栏 */
-.promise-bar .label span{
-  white-space: normal;                     /* 允许换行 */
-  overflow: visible;
-  text-overflow: clip;
+/* Compact commitment chips */
+.promise-chips{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.75rem; }
+.promise-chips .chip{
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.38rem .6rem;
+  border:1px solid #e5e7eb; border-radius:9999px;
+  background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.04);
+  font-size:.92rem; line-height:1; color:#374151; white-space:nowrap;
 }
-.promise-bar .label strong{ font-size:1rem; }
-.promise-bar{ padding: 0.9rem 1rem; }      /* 右栏窄时，压缩内边距一点 */
-/* --- Hero layout tightening --- */
-.banner{
-  display: grid;
-  grid-template-columns: minmax(0, 55%) minmax(0, 45%);  /* 左55% 图 / 右45% 文案 */
-  align-items: center;
-  column-gap: 24px;                                      /* 缩小中间空隙 */
-}
+.promise-chips .chip b{ font-weight:600; color:#111827; }
+.promise-chips .chip svg{ width:16px; height:16px; display:block; }
+.banner-right .promise-chips{ margin-top:.6rem; }
 
-/* 兼容一些主题给右列加了多余的左边距/内边距的情况 */
-.banner-right{ margin-left: 0 !important; padding-left: 0 !important; }
+/*（可选）压一压Hero段落与按钮的空隙，更利落 */
+.banner-right p{ margin-top:.75rem; margin-bottom:.9rem; }
+.banner-right .cta-button{ padding:.9rem 1.1rem; }
 
-/* 确保左侧大图自适应，不会撑开布局 */
-.banner-left img{ width:100%; height:auto; display:block; }
-
-/* 移动端堆叠 */
-@media (max-width: 960px){
-  .banner{ grid-template-columns: 1fr; row-gap: 16px; }
-  .promise-bar{ margin-top: .5rem; }
-}
-/* 放宽整体页面宽度（超大屏才生效，避免移动端被拉开） */
-@media (min-width: 1400px){
-  /* 下面这些是常见包裹容器的类名：就算你只命中其中一个也有效 */
-  .container, .wrap, .page, .content, main, .site-container {
-    max-width: 1320px !important;  /* 可改为 1360/1400 自行微调 */
-  }
-}
-
-/* Hero 两列比例稍偏向左图，缩小中间空隙 */
-@media (min-width: 1024px){
-  .banner{
-    grid-template-columns: minmax(0, 60%) minmax(0, 40%); /* 原55/45 → 60/40 */
-    column-gap: 24px;                                     /* 中间空隙 */
-  }
-  .banner-right{ max-width: 560px; } /* 防止右侧文字行长过长 */
+/* 暗色模式适配（可留可删） */
+@media (prefers-color-scheme: dark){
+  .promise-chips .chip{ border-color:#2a2a2a; background:#111; color:#e5e7eb; }
+  .promise-chips .chip b{ color:#fff; }
 }
