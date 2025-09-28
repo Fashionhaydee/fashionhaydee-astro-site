@@ -635,7 +635,7 @@ input[type="file"] {
 @media (min-width: 821px){ .mobile-cta{ display:none; } }
 /* Footer Composite CTA */
 .fh-cta-footer{
-  margin:24px auto; padding:14px; max-width:1120px;
+  margin:16px auto; padding:14px; max-width:1120px;
   background:#fff; border:1px solid #e5e7eb; border-radius:16px;
   box-shadow:0 8px 28px rgba(0,0,0,.06);
 }
