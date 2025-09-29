@@ -718,3 +718,22 @@ input[type="file"] {
 @media (max-width:560px){
   .fh-modal__dialog{margin:10vh 12px;padding:16px}
 }
+/* Mobile Sticky CTA */
+.fh-stickybar{
+  position:fixed; left:0; right:0; bottom:10px; z-index:50;
+  display:none; gap:8px; padding:8px 12px;
+  pointer-events:none; /* 让容器不挡点击 */
+}
+.fh-stickybar[aria-hidden="false"]{ display:flex; justify-content:center; }
+.fh-stickybar__btn{
+  pointer-events:auto; /* 让按钮可点击 */
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:42%; padding:.78rem 1rem; border-radius:9999px; font-weight:800;
+  text-decoration:none; box-shadow:0 10px 24px rgba(0,0,0,.18);
+  transition:transform .06s, box-shadow .2s; font-size:15px;
+}
+.fh-stickybar__btn:active{ transform:translateY(1px); }
+.fh-stickybar__quote{ background:#111; color:#fff; }
+.fh-stickybar__wa{ background:#25D366; color:#fff; }
+
+@media (min-width: 861px){ .fh-stickybar{ display:none !important; } } /* 只在移动端显示 */
