@@ -348,6 +348,210 @@
   log(quote,'quote'); log(wa,'whatsapp');
 })();
 </script>
-  
+  <!-- === FH Micro-Form Modal START === -->
+<div id="fh-modal" class="fh-modal" aria-hidden="true">
+  <div class="fh-modal__backdrop" data-close></div>
+  <div class="fh-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="fh-modal-title">
+    <button class="fh-modal__close" type="button" aria-label="Close" data-close>×</button>
+    <h3 id="fh-modal-title">Get My Quote in 3 Steps</h3>
+    <p class="fh-modal__sub">Tell us a few preferences. We’ll reply fast.</p>
+
+    <form id="fh-form" novalidate>
+      <label class="fh-field">
+        <span>Budget range*</span>
+        <select name="budget" required>
+          <option value="">Select…</option>
+          <option>< $300</option>
+          <option>$300–$700</option>
+          <option>$700–$1,500</option>
+          <option>$1,500–$3,000</option>
+          <option>$3,000+</option>
+        </select>
+      </label>
+
+      <label class="fh-field">
+        <span>Metal & stone preference</span>
+        <input name="prefs" type="text" placeholder="e.g., 18K yellow gold + moss agate / sapphire" />
+      </label>
+
+      <label class="fh-field">
+        <span>Timeline</span>
+        <select name="timeline">
+          <option>Flexible</option>
+          <option>ASAP (1–2 weeks)</option>
+          <option>By a specific date</option>
+        </select>
+      </label>
+
+      <label class="fh-field">
+        <span>Contact*</span>
+        <input name="contact" type="text" required placeholder="WhatsApp number or Email" />
+      </label>
+
+      <label class="fh-check">
+        <input type="checkbox" name="consent" required />
+        <span>I agree to be contacted about my quote.</span>
+      </label>
+
+      <div class="fh-actions">
+        <button type="submit" class="btn btn--primary">Send & Open WhatsApp</button>
+        <button type="button" class="btn" data-close>Cancel</button>
+      </div>
+
+      <p class="fh-hint">We’ll prefill your message and include this page link for context.</p>
+    </form>
+  </div>
+</div>
+<!-- === FH Micro-Form Modal END === -->
+
+<script>
+(function(){
+  // 选择哪些按钮能弹出微表单（已覆盖你站的主要CTA）
+  const selectors = [
+    '#cta-quote',           // 首页/流程的主按钮ID
+    '#cta-quote-footer',    // 页尾CTA
+    '#cta-quote-about',     // About页底部
+    '#cta-quote-guides',    // Guides底部
+    '.button[href^="/guides/"]', // Guides卡片“Read Guide”之后你也可保留，不触发
+    'a[href="#contact"].cta-button', // 旧样式的联系按钮
+  ];
+  const modal = document.getElementById('fh-modal');
+  const form  = document.getElementById('fh-form');
+
+  // 绑定触发
+  document.querySelectorAll(selectors.join(',')).forEach(el=>{
+    el.addEventListener('click', function(e){
+      // 仅当是“获取报价”意图时触发，如果你想保留原跳转，可给按钮加 data-noform
+      if(el.hasAttribute('data-noform')) return;
+      e.preventDefault();
+      modal.setAttribute('aria-hidden','false');
+      // 记录来源
+      modal.dataset.src = location.origin + location.pathname + location.hash;
+      // 给金属/主石自动带入当前页大致主题（如 guides 页）
+      const topic = document.querySelector('h1')?.innerText?.trim();
+      const prefs = form.elements['prefs'];
+      if(topic && !prefs.value) prefs.value = topic;
+    });
+  });
+
+  // 关闭
+  modal.addEventListener('click', e=>{
+    if(e.target.matches('[data-close], .fh-modal__backdrop')) modal.setAttribute('aria-hidden','true');
+  });
+  window.addEventListener('keydown', e=>{ if(e.key==='Escape') modal.setAttribute('aria-hidden','true'); });
+
+  // 提交 → 跳转 WhatsApp（带预填+UTM）
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const fd = new FormData(form);
+    const budget = (fd.get('budget')||'').trim();
+    const prefs  = (fd.get('prefs')||'').trim();
+    const time   = (fd.get('timeline')||'').trim();
+    const contact= (fd.get('contact')||'').trim();
+    const ok = budget && contact && fd.get('consent');
+
+    if(!ok){
+      alert('Please fill the required fields (Budget & Contact) and consent.');
+      return;
+    }
+
+    const src = modal.dataset.src || (location.origin + location.pathname);
+    const text = encodeURIComponent(
+      `Hi Haydee! I'd like a quick custom quote.\n`+
+      `Budget: ${budget}\n`+
+      `Metal & stone: ${prefs || '(open to advice)'}\n`+
+      `Timeline: ${time}\n`+
+      `Contact: ${contact}\n`+
+      `From: ${src}`
+    );
+    const utm = 'utm_source=website&utm_medium=micro_form&utm_campaign=lead_capture';
+    const wa  = `https://wa.me/8615347252138?text=${text}&${utm}`;
+
+    // 轻量点击日志（没有 GA4 也不报错）
+    if(window.gtag){ gtag('event','submit_micro_form',{event_category:'Lead',event_label:src}); }
+    else { console.log('[Lead] micro_form', src); }
+
+    // 打开 WhatsApp
+    window.location.href = wa;
+    modal.setAttribute('aria-hidden','true');
+    form.reset();
+  });
+})();
+</script>
+<script>
+(function(){
+  // 选择哪些按钮能弹出微表单（已覆盖你站的主要CTA）
+  const selectors = [
+    '#cta-quote',           // 首页/流程的主按钮ID
+    '#cta-quote-footer',    // 页尾CTA
+    '#cta-quote-about',     // About页底部
+    '#cta-quote-guides',    // Guides底部
+    '.button[href^="/guides/"]', // Guides卡片“Read Guide”之后你也可保留，不触发
+    'a[href="#contact"].cta-button', // 旧样式的联系按钮
+  ];
+  const modal = document.getElementById('fh-modal');
+  const form  = document.getElementById('fh-form');
+
+  // 绑定触发
+  document.querySelectorAll(selectors.join(',')).forEach(el=>{
+    el.addEventListener('click', function(e){
+      // 仅当是“获取报价”意图时触发，如果你想保留原跳转，可给按钮加 data-noform
+      if(el.hasAttribute('data-noform')) return;
+      e.preventDefault();
+      modal.setAttribute('aria-hidden','false');
+      // 记录来源
+      modal.dataset.src = location.origin + location.pathname + location.hash;
+      // 给金属/主石自动带入当前页大致主题（如 guides 页）
+      const topic = document.querySelector('h1')?.innerText?.trim();
+      const prefs = form.elements['prefs'];
+      if(topic && !prefs.value) prefs.value = topic;
+    });
+  });
+
+  // 关闭
+  modal.addEventListener('click', e=>{
+    if(e.target.matches('[data-close], .fh-modal__backdrop')) modal.setAttribute('aria-hidden','true');
+  });
+  window.addEventListener('keydown', e=>{ if(e.key==='Escape') modal.setAttribute('aria-hidden','true'); });
+
+  // 提交 → 跳转 WhatsApp（带预填+UTM）
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const fd = new FormData(form);
+    const budget = (fd.get('budget')||'').trim();
+    const prefs  = (fd.get('prefs')||'').trim();
+    const time   = (fd.get('timeline')||'').trim();
+    const contact= (fd.get('contact')||'').trim();
+    const ok = budget && contact && fd.get('consent');
+
+    if(!ok){
+      alert('Please fill the required fields (Budget & Contact) and consent.');
+      return;
+    }
+
+    const src = modal.dataset.src || (location.origin + location.pathname);
+    const text = encodeURIComponent(
+      `Hi Haydee! I'd like a quick custom quote.\n`+
+      `Budget: ${budget}\n`+
+      `Metal & stone: ${prefs || '(open to advice)'}\n`+
+      `Timeline: ${time}\n`+
+      `Contact: ${contact}\n`+
+      `From: ${src}`
+    );
+    const utm = 'utm_source=website&utm_medium=micro_form&utm_campaign=lead_capture';
+    const wa  = `https://wa.me/8615347252138?text=${text}&${utm}`;
+
+    // 轻量点击日志（没有 GA4 也不报错）
+    if(window.gtag){ gtag('event','submit_micro_form',{event_category:'Lead',event_label:src}); }
+    else { console.log('[Lead] micro_form', src); }
+
+    // 打开 WhatsApp
+    window.location.href = wa;
+    modal.setAttribute('aria-hidden','true');
+    form.reset();
+  });
+})();
+</script>
+    
 </body>
 </html>
