@@ -612,6 +612,23 @@
   log(btnWA,'whatsapp'); log(btnQ,'quote');
 })();
 </script>
+<script>
+(function(){
+  const box = document.querySelector('.fh-budget');
+  if(!box) return;
+  box.addEventListener('click', function(e){
+    const btn = e.target.closest('[data-b]'); if(!btn) return;
+    const map = {
+      starter: "Hi Haydee! I’m exploring options. Could you suggest metals and stones that balance beauty and value?",
+      standard: "Hi Haydee! I have a general idea. Could you recommend metals/stones and a rough quote?",
+      premium: "Hi Haydee! I want premium craftsmanship and details. Can we discuss options and timeline?"
+    };
+    const text = encodeURIComponent(map[btn.dataset.b] + "\nFrom: " + location.href);
+    const utm  = "utm_source=website&utm_medium=budget_helper&utm_campaign=cta";
+    location.href = `https://wa.me/8615347252138?text=${text}&${utm}`;
+  });
+})();
+</script>
     
 </body>
 </html>
