@@ -1,106 +1,198 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About FashionHaydee| Designer Story & Brand Values | FashionHaydee Fine Jewelry</title>
-<meta name="description" content="Learn about the story behind FashionHaydee, a brand crafting meaningful fine jewelry with emotion and nature at its heart." />    
-<meta content="Meet Haydee and discover the story behind FashionHaydee – a fine jewelry studio in Guangzhou dedicated to emotion-driven, handcrafted jewelry." name="description"/>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Custom Engagement Rings | Guangzhou Studio | Insured Worldwide Shipping">
-<meta property="og:description" content="Bespoke engagement rings and fine jewelry. 7–15 business days, 30–50% deposit, insured worldwide shipping.">
-<meta property="og:url" content="https://fashionhaydee.com/">
-<meta property="og:image" content="https://fashionhaydee.com/images/banner.jpg">
-<meta name="twitter:card" content="summary_large_image">
-    
-<link href="style.css" rel="stylesheet"/>
-<style>
-    .about-section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.8;
-    }
-    .about-intro {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 3rem;
-    }
-    .about-intro img {
-      width: 280px;
-      border-radius: 12px;
-    }
-    .about-text {
-      flex: 1;
-    }
-    .studio-photo {
-      width: 100%;
-      margin: 2rem 0;
-      border-radius: 10px;
-    }
-    h1, h2 {
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About FashionHaydee | Emotion-Driven Fine Jewelry from Guangzhou</title>
+
+  <!-- 单一且清晰的描述（修复原文件重复的 description） -->
+  <meta name="description" content="Meet Haydee—the designer behind FashionHaydee. We turn personal stories into custom silver & 14K/18K gold jewelry with handpicked gemstones and meticulous craftsmanship in Guangzhou." />
+  <link rel="canonical" href="https://fashionhaydee.com/about.html"/>
+
+  <!-- Open Graph / Twitter（关于页专属） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About FashionHaydee | Emotion-Driven Fine Jewelry from Guangzhou">
+  <meta property="og:description" content="Designer-led studio crafting meaningful custom jewelry—stories told through silver, gold and gemstones.">
+  <meta property="og:url" content="https://fashionhaydee.com/about.html">
+  <meta property="og:image" content="https://fashionhaydee.com/images/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link href="style.css" rel="stylesheet"/>
+
+  <!-- Page-scoped styles -->
+  <style>
+    .page-wrap{max-width:1120px;margin:0 auto;padding:0 12px;}
+    /* breadcrumbs */
+    .breadcrumbs{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-size:.9rem;color:#6b7280;margin:.75rem 0 .75rem}
+    .breadcrumbs a{color:#374151;text-decoration:underline;text-underline-offset:3px}
+    .breadcrumbs span[aria-hidden="true"]{color:#9ca3af}
+
+    /* intro */
+    .about-section{line-height:1.8;padding:0 0 1rem}
+    .about-intro{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;margin:0 0 2rem}
+    .about-intro img{width:300px;max-width:42vw;border-radius:12px}
+    .about-text{flex:1 1 380px}
+    h1{margin:.5rem 0 1rem}
+    h2{margin:1.4rem 0 .7rem}
+
+    /* workshop image */
+    .studio-photo{width:100%;height:auto;border-radius:12px;margin:1rem 0}
+
+    /* why-us chips */
+    .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 1.2rem}
+    .chip{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .7rem;border:1px solid #e5e7eb;border-radius:9999px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);font-weight:600;color:#111827}
+    .chip em{font-style:normal;font-weight:500;color:#6b7280}
+
+    /* social proof cards */
+    .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0 1.5rem}
+    .proof-card{background:#fff;border:1px solid #eef2f7;border-radius:12px;padding:1rem;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+    .proof-card b{display:block;margin-bottom:.25rem}
+    .proof-card p{margin:.25rem 0 0;color:#374151}
+
+    /* footer composite CTA（与其它页口径一致） */
+    .cta-trust{margin:24px auto 16px;padding:14px;max-width:1120px;background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
+    .cta-trust__head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:6px 6px 10px}
+    .cta-trust h3{margin:0;font-size:1.25rem}
+    .cta-trust p{margin:4px 0 0;color:#6b7280}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.15rem;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .06s,box-shadow .2s}
+    .btn--primary{background:#111;color:#fff}
+    .btn--wa{background:#25D366;color:#fff;margin-left:.6rem}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
+    .trust-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;padding:10px;margin:0;list-style:none;border-top:1px solid #f0f2f5}
+    .trust-list li{display:flex;align-items:center;gap:.6rem;padding:.4rem .55rem;border-radius:10px;background:#fafafa;border:1px solid #f1f5f9}
+    .trust-ico{font-size:1.1rem}
+    .trust-list b{color:#111827}
+    .trust-list em{font-style:normal;color:#6b7280;font-size:.92rem}
+
+    @media (max-width:780px){ .btn{padding:.85rem 1rem} }
   </style>
 
-<style>
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  z-index: 1000;
-}
-.whatsapp-icon img {
-  width: 100%;
-  height: auto;
-}
-</style>
+  <!-- Breadcrumb + Organization JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://fashionhaydee.com/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://fashionhaydee.com/about.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"FashionHaydee",
+    "url":"https://fashionhaydee.com/",
+    "logo":"https://fashionhaydee.com/images/banner.jpg",
+    "address":{"@type":"PostalAddress","addressLocality":"Guangzhou","addressCountry":"CN"},
+    "contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"hello@fashionhaydee.com","telephone":"+86 153 4725 2138","areaServed":"Worldwide"}]
+  }
+  </script>
 </head>
+
 <body>
+  <!-- 保留你的导航 -->
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="custom-process.html">Custom Process</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="/guides.html">Guides</a></li>
+      <li><a href="/content.html">Stories</a></li>
+    </ul>
+  </nav>
 
-<nav>
-<ul>
-<li><a href="/index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="/#services">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="custom-process.html">Custom Process</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="/guides.html">Guides</a></li>
-<!-- Blog link hidden to disable blog page temporarily -->
-<!-- <li><a href="/blog">Blog</a></li> -->
-<li><a href="/content.html">Stories</a></li>
-</ul>
-</nav>
+  <div class="page-wrap">
+    <!-- 面包屑 -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">About</span>
+    </nav>
 
-<section class="about-section">
-<div class="about-intro">
-<img alt="Haydee - Jewelry Designer" src="images/haydee-portrait.jpg"/>
-<div class="about-text">
-<h1>Meet Haydee</h1>
-<p>Hello! I'm Haydee, founder and designer behind FashionHaydee. Jewelry is more than an accessory—it's a language of emotion. I started this studio in Guangzhou to help people tell their stories through custom pieces that are heartfelt, symbolic, and unique.</p>
-</div>
-</div>
-<h2>Our Workshop</h2>
-<img alt="Jewelry Studio in Guangzhou" class="studio-photo" src="images/studio-environment.jpg"/>
-<p>Our studio is nestled in the heart of Guangzhou, home to a talented team of artisans who specialize in silver and gold jewelry crafting. From hand carving wax to stone setting and polishing, each piece is made with intention and care. Whether you're celebrating love, memory, or a milestone, we craft pieces that hold meaning.</p>
-<h2>What We Believe</h2>
-<p>FashionHaydee is built on the belief that jewelry is a totem of emotion. Every gemstone carries a story. Every design reflects a moment. That’s why we work closely with our clients, transforming their ideas into wearable art that lasts generations. No templates. No shortcuts. Just authentic, beautiful storytelling in metal and stone.</p>
-</section>
-<footer>
-<p>© 2025 FashionHaydee | Handcrafted in Guangzhou</p>
-</footer>
+    <section class="about-section">
+      <div class="about-intro">
+        <img src="images/haydee-portrait.jpg" alt="Haydee, jewelry designer at FashionHaydee studio in Guangzhou" loading="lazy" decoding="async" width="300">
+        <div class="about-text">
+          <h1>Meet Haydee</h1>
+          <p>Hello! I'm Haydee, founder and designer behind FashionHaydee. Jewelry is more than an accessory—it's a language of emotion. I started this studio in Guangzhou to help people tell their stories through custom pieces that are heartfelt, symbolic, and unique.</p>
 
-<a class="whatsapp-icon" href="https://wa.me/8615347252138" target="_blank">
-<img alt="WhatsApp" src="images/whatsapp.png"/>
-</a>
+          <!-- three quick chips：差异化卖点 -->
+          <div class="chips" aria-label="Why clients choose us">
+            <span class="chip">🧭 1-to-1 design guidance <em>from idea to draft</em></span>
+            <span class="chip">⏱️ 7–15 business days <em>typical timeline</em></span>
+            <span class="chip">📦 Insured worldwide shipping</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Our Workshop</h2>
+      <img class="studio-photo" src="images/studio-environment.jpg" alt="FashionHaydee jewelry workshop in Guangzhou" loading="lazy" decoding="async">
+      <p>Our studio is nestled in the heart of Guangzhou, home to a talented team of artisans who specialize in silver and gold jewelry crafting. From hand carving wax to stone setting and polishing, each piece is made with intention and care. Whether you're celebrating love, memory, or a milestone, we craft pieces that hold meaning.</p>
+
+      <h2>What We Believe</h2>
+      <p>FashionHaydee is built on the belief that jewelry is a totem of emotion. Every gemstone carries a story. Every design reflects a moment. That’s why we work closely with our clients, transforming their ideas into wearable art that lasts generations. No templates. No shortcuts. Just authentic, beautiful storytelling in metal and stone.</p>
+
+      <!-- 社会证明（轻量卡片） -->
+      <div class="proof" aria-label="Client stories & process">
+        <div class="proof-card">
+          <b>Real client stories</b>
+          <p>See how ideas became meaningful rings & pendants—anonymized but real. <a href="/content.html">Explore Stories →</a></p>
+        </div>
+        <div class="proof-card">
+          <b>Transparent process</b>
+          <p>4 clear steps with progress updates—sketch → 3D → crafting → delivery. <a href="custom-process.html">See the timeline →</a></p>
+        </div>
+        <div class="proof-card">
+          <b>Thoughtful aftercare</b>
+          <p>One free resize within 30 days and friendly guidance on care & cleaning. <a href="faq.html">Read FAQ →</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 统一的页尾复合 CTA（与首页/流程/FAQ 同口径） -->
+  <section class="cta-trust" role="region" aria-label="Get quote or chat">
+    <div class="cta-trust__head">
+      <div>
+        <h3>Ready to Design Your Piece?</h3>
+        <p>Get a tailored quote in minutes or chat with Haydee for quick advice.</p>
+      </div>
+      <div>
+        <a href="index.html#contact" class="btn btn--primary" id="cta-quote-about">Get My Quote</a>
+        <a href="https://wa.me/8615347252138" class="btn btn--wa" target="_blank" rel="noopener" id="cta-wa-about">WhatsApp</a>
+      </div>
+    </div>
+    <ul class="trust-list" aria-label="Service guarantees">
+      <li><span class="trust-ico">⏱️</span><b>7–15 business days</b><em>typical timeline</em></li>
+      <li><span class="trust-ico">💳</span><b>30–50% deposit</b><em>design kick-off</em></li>
+      <li><span class="trust-ico">📦</span><b>Insured shipping</b><em>worldwide</em></li>
+      <li><span class="trust-ico">🔧</span><b>One free resize</b><em>within 30 days</em></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p style="text-align:center">© 2025 FashionHaydee | Handcrafted in Guangzhou</p>
+  </footer>
+
+  <!-- 统一 UTM & 预填开场白；移除原文件悬浮 WhatsApp 图标 -->
+  <script>
+  (function(){
+    var wa = document.getElementById('cta-wa-about');
+    if(wa){
+      var text = encodeURIComponent("Hi Haydee! I'd like a quick quote for a custom piece. (from About page)");
+      var utm  = "utm_source=website&utm_medium=about&utm_campaign=about_footer_cta";
+      wa.href  = "https://wa.me/8615347252138?text="+text+"&"+utm;
+    }
+    // 轻量点击日志（没有 GA4 也不报错）
+    function log(id,label){ var el=document.getElementById(id); if(!el) return;
+      el.addEventListener('click', ()=> { if(window.gtag){ gtag('event','click_'+label,{event_category:'CTA',event_label:'about'}); } else { console.log('[CTA] about',label); } });
+    }
+    log('cta-quote-about','quote'); log('cta-wa-about','whatsapp');
+  })();
+  </script>
 </body>
 </html>
