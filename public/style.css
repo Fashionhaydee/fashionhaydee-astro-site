@@ -688,3 +688,33 @@ input[type="file"] {
 }
 .breadcrumbs a{ color:#374151; text-decoration:underline; text-underline-offset:3px; }
 .breadcrumbs span[aria-hidden="true"]{ color:#9ca3af; }
+/* === FH Micro-Form Modal === */
+.fh-modal{position:fixed;inset:0;display:none;z-index:100}
+.fh-modal[aria-hidden="false"]{display:block}
+.fh-modal__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(2px)}
+.fh-modal__dialog{
+  position:relative; max-width:520px; margin:6vh auto; background:#fff; border-radius:16px;
+  padding:18px 18px 14px; box-shadow:0 30px 60px rgba(0,0,0,.25);
+}
+.fh-modal__close{position:absolute;top:8px;right:10px;border:0;background:transparent;font-size:22px;cursor:pointer}
+#fh-modal-title{margin:.25rem 0 .25rem;font-size:1.35rem}
+.fh-modal__sub{margin:.1rem 0 1rem;color:#6b7280}
+
+.fh-field{display:grid;gap:.35rem;margin:.55rem 0}
+.fh-field span{font-weight:600}
+.fh-field input,.fh-field select{
+  width:100%; padding:.7rem .75rem; border:1px solid #e5e7eb; border-radius:12px; outline:none;
+}
+.fh-field input:focus,.fh-field select:focus{border-color:#b38b3b; box-shadow:0 0 0 3px rgba(179,139,59,.15)}
+
+.fh-check{display:flex;align-items:center;gap:.5rem;margin:.5rem 0 .2rem;color:#4b5563}
+.fh-actions{display:flex;gap:.6rem;margin-top:.6rem}
+.fh-hint{color:#9ca3af;font-size:.9rem;margin:.5rem 0 0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.15rem;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .06s,box-shadow .2s;border:1px solid #e5e7eb;background:#fff;color:#111}
+.btn--primary{background:#111;color:#fff;border-color:#111}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
+
+@media (max-width:560px){
+  .fh-modal__dialog{margin:10vh 12px;padding:16px}
+}
