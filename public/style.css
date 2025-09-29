@@ -737,3 +737,10 @@ input[type="file"] {
 .fh-stickybar__wa{ background:#25D366; color:#fff; }
 
 @media (min-width: 861px){ .fh-stickybar{ display:none !important; } } /* 只在移动端显示 */
+/* Budget Helper */
+.fh-budget{max-width:900px;margin:14px auto;padding:10px 12px;background:#fff;border:1px solid #eef2f7;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);text-align:center}
+.fh-budget__title{margin:.2rem 0 .2rem}
+.fh-budget__sub{color:#6b7280;margin:0 0 .6rem}
+.fh-budget__actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.fh-budget .btn{padding:.8rem 1rem;border-radius:12px;font-weight:800;border:1px solid #e5e7eb;background:#111;color:#fff;text-decoration:none;cursor:pointer;transition:transform .06s,box-shadow .2s}
+.fh-budget .btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
