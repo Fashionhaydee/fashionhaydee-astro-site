@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jewelry Guides | Custom Ring Advice & Gemstone Tips | FashionHaydee</title>
-    <meta
-      name="description"
-      content="Expert guides for custom jewelry: how to choose gemstones, customize rings, and discover the meaning behind each piece. FashionHaydee — personalized jewelry, crafted with emotion."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jewelry Guides | Custom Ring Advice & Gemstone Tips | FashionHaydee</title>
+  <meta name="description" content="Expert guides for custom jewelry: gemstone choices, ring settings, symbolism, and practical tips. Learn how to design a meaningful custom piece with confidence." />
+  <link rel="canonical" href="https://fashionhaydee.com/guides.html" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jewelry Guides | Custom Ring Advice & Gemstone Tips">
+  <meta property="og:description" content="Learn gemstones, settings, symbolism and practical tips to design a meaningful custom ring.">
+  <meta property="og:url" content="https://fashionhaydee.com/guides.html">
+  <meta property="og:image" content="https://fashionhaydee.com/images/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Page-scoped styles -->
+  <style>
+    .page-wrap{max-width:1120px;margin:0 auto;padding:0 12px;}
+
+    /* breadcrumbs + quick help */
+    .breadcrumbs{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-size:.9rem;color:#6b7280;margin:.75rem 0 .75rem}
+    .breadcrumbs a{color:#374151;text-decoration:underline;text-underline-offset:3px}
+    .breadcrumbs span[aria-hidden="true"]{color:#9ca3af}
+    .guides-intro{max-width:760px;margin:.25rem auto 1.25rem;text-align:center;color:#4b5563}
+    .quick-help{margin:.25rem 0 0}
+    .quick-help a{text-decoration:underline;text-underline-offset:3px}
+
+    /* grid of guide cards */
+    .guides-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:1.25rem}
+    .guide-card{background:#fff;border:1px solid #eef2f7;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.04);padding:1rem;display:flex;flex-direction:column}
+    .guide-card img{width:100%;height:auto;border-radius:10px}
+    .guide-card h2{font-size:1.05rem;margin:.75rem 0 .35rem}
+    .guide-card p{color:#4b5563;line-height:1.55;margin:.15rem 0 .5rem}
+    .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.25rem 0 .5rem}
+    .chip{display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .55rem;border:1px solid #e5e7eb;border-radius:9999px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);font-size:.88rem;color:#111827}
+    .chip em{font-style:normal;color:#6b7280}
+    .button{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;padding:.7rem 1rem;border-radius:10px;background:#111;color:#fff;text-decoration:none;font-weight:700;transition:transform .06s,box-shadow .2s}
+    .button:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
+
+    /* bottom CTA row */
+    .cta-row{display:flex;justify-content:center;gap:.6rem;margin:1.75rem 0 1rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.15rem;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .06s,box-shadow .2s}
+    .btn--primary{background:#111;color:#fff}
+    .btn--wa{background:#25D366;color:#fff}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.12)}
+
+    nav ul{display:flex;justify-content:center;list-style:none;gap:1.5rem;padding:1rem;background:#f5f5f5;margin:0}
+    nav a{text-decoration:none;color:black}
+    nav a.active{font-weight:700;text-decoration:underline;text-underline-offset:4px}
+  </style>
+
+  <!-- JSON-LD：Breadcrumbs + Guides ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://fashionhaydee.com/"},
+      {"@type":"ListItem","position":2,"name":"Guides","item":"https://fashionhaydee.com/guides.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Jewelry Guides",
+    "description":"Expert tips for gemstones, settings, symbolism and custom ring design.",
+    "hasPart":{
+      "@type":"ItemList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"url":"https://fashionhaydee.com/guides/leaf-engagement-ring"},
+        {"@type":"ListItem","position":2,"url":"https://fashionhaydee.com/guides/moss-agate-engagement-ring"},
+        {"@type":"ListItem","position":3,"url":"https://fashionhaydee.com/guides/moss-agate-meaning"},
+        {"@type":"ListItem","position":4,"url":"https://fashionhaydee.com/guides/tourmaline-engagement-ring"},
+        {"@type":"ListItem","position":5,"url":"https://fashionhaydee.com/guides/opal-engagement-ring"},
+        {"@type":"ListItem","position":6,"url":"https://fashionhaydee.com/guides/alexandrite-engagement-ring"},
+        {"@type":"ListItem","position":7,"url":"https://fashionhaydee.com/guides/moonstone-engagement-ring"},
+        {"@type":"ListItem","position":8,"url":"https://fashionhaydee.com/guides/moss-agate-wedding-ring"},
+        {"@type":"ListItem","position":9,"url":"https://fashionhaydee.com/guides/how-to-order-from-china"},
+        {"@type":"ListItem","position":10,"url":"https://fashionhaydee.com/guides/emerald-cut-engagement-rings"},
+        {"@type":"ListItem","position":11,"url":"https://fashionhaydee.com/guides/black-diamond-engagement-ring"},
+        {"@type":"ListItem","position":12,"url":"https://fashionhaydee.com/guides/sapphire-engagement-ring"},
+        {"@type":"ListItem","position":13,"url":"https://fashionhaydee.com/guides/ruby-engagement-ring"},
+        {"@type":"ListItem","position":14,"url":"https://fashionhaydee.com/guides/vintage-engagement-rings"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Nav（这页高亮 Guides） -->
+  <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -20,256 +103,213 @@
       <li><a href="/#contact">Contact</a></li>
       <li><a href="custom-process.html">Custom Process</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <li><a href="/guides.html">Guides</a></li>
-      <!-- Blog link hidden to disable blog page temporarily -->
-      <!-- <li><a href="/blog">Blog</a></li> -->
-
-      <li><a href="content.html" class="active">Stories</a></li>
+      <li><a href="/guides.html" class="active">Guides</a></li>
+      <li><a href="content.html">Stories</a></li>
     </ul>
   </nav>
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-  <a href="/">Home</a>
-  <span aria-hidden="true">›</span>
-  <span aria-current="page">Guides</span>
-</nav>
 
-    <main style="padding: 2rem;">
-      <h1>Jewelry Guides</h1>
-      <p style="max-width: 700px;">
-        Learn how to choose meaningful custom jewelry with our SEO-backed guides.
-        From gemstone rings to symbolic designs — we help you understand what truly matters.
+  <div class="page-wrap">
+    <!-- 面包屑 -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Guides</span>
+    </nav>
+
+    <main>
+      <h1 style="text-align:center">Jewelry Guides</h1>
+      <p class="guides-intro">
+        Learn how to choose meaningful custom jewelry with our expert guides — gemstones, settings, symbolism and real design tips.
+        <span class="quick-help">
+          Need quick advice?
+          <a href="https://wa.me/8615347252138?text=Hi%20Haydee!%20I%20need%20help%20choosing%20a%20gem%20/‌%20setting%20for%20a%20custom%20ring.&utm_source=website&utm_medium=guides&utm_campaign=quick_help" target="_blank" rel="noopener">WhatsApp us now</a>.
+        </span>
       </p>
 
-      <section style="margin-top: 2rem;">
-        <div class="guide-card">
-          <img
-            src="/images/leaf-gold-vine-ring.png"
-            alt="Moss agate leaf engagement ring"
-            style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-          <h2 style="margin-top: 1rem;">Leaf Engagement Rings: A Nature-Inspired Symbol of Love</h2>
-          <p>
-            Discover why leaf and vine designs speak to nature lovers, and how to customize a meaningful ring with moss agate, moissanite, or vintage motifs.
-          </p>
+      <!-- 自适应卡片栅格 -->
+      <section class="guides-grid">
+
+        <!-- 下面保留你原有的每张卡片内容，只做结构统一 + chips + lazy 属性 -->
+        <article class="guide-card">
+          <img src="/images/leaf-gold-vine-ring.png" alt="Moss agate leaf engagement ring" loading="lazy" decoding="async" />
+          <h2>Leaf Engagement Rings: A Nature-Inspired Symbol of Love</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days <em>typical</em></span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Discover why leaf and vine designs speak to nature lovers, and how to customize a meaningful ring with moss agate, moissanite, or vintage motifs.</p>
           <a href="/guides/leaf-engagement-ring" class="button">Read Guide</a>
-        </div>
+        </article>
 
-        <div class="guide-card">
-          <img
-            src="/images/moss-agate-ring-cover.jpg"
-            alt="Moss Agate Engagement Ring Guide"
-            style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-          <h2 style="margin-top: 1rem;">Moss Agate Engagement Ring: Meaningful & Earthy Love Symbols</h2>
-          <p>
-            Discover the unique beauty and symbolic meaning behind moss agate rings, and explore custom design ideas for earthy engagement styles..
-          </p>
+        <article class="guide-card">
+          <img src="/images/moss-agate-ring-cover.jpg" alt="Moss Agate Engagement Ring Guide" loading="lazy" decoding="async" />
+          <h2>Moss Agate Engagement Ring: Meaningful & Earthy Love Symbols</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Discover the unique beauty and symbolic meaning behind moss agate rings, and explore custom design ideas for earthy engagement styles.</p>
           <a href="/guides/moss-agate-engagement-ring" class="button">Read Guide</a>
-        </div>
-        
-        <div class="guide-card">
-          <img 
-           src="/images/moss-agate-ring-nature-still.jpg" 
-           alt="Moss Agate Meaning Guide" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Moss Agate Meaning: Symbolism, Healing & Custom Ring Inspiration</h2>
-        <p>
-           Discover the spiritual meaning behind moss agate, explore its emotional symbolism, and learn how to customize a deeply personal moss agate ring.
-        </p>
-        <a href="/guides/moss-agate-meaning" class="button">Read Guide</a>
-       </div>
+        </article>
 
-        <div class="guide-card">
-  <img
-    src="/images/tourmaline-engagement-cover.jpg"
-    alt="Tourmaline Engagement Ring Guide"
-    style="width: 100%; max-width: 320px; border-radius: 8px;"
-  />
-  <h2 style="margin-top: 1rem;">Tourmaline Engagement Ring: A Colorful & Symbolic Diamond Alternative</h2>
-  <p>
-    Explore the emotional symbolism, color options, and custom design possibilities of tourmaline engagement rings — a vibrant choice for couples seeking uniqueness and meaning.
-  </p>
-  <a href="/guides/tourmaline-engagement-ring" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/moss-agate-ring-nature-still.jpg" alt="Moss Agate Meaning Guide" loading="lazy" decoding="async" />
+          <h2>Moss Agate Meaning: Symbolism, Healing & Custom Ring Inspiration</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Discover the spiritual meaning behind moss agate, explore its emotional symbolism, and learn how to customize a deeply personal moss agate ring.</p>
+          <a href="/guides/moss-agate-meaning" class="button">Read Guide</a>
+        </article>
 
-        <div class="guide-card">
-          <img 
-           src="/images/opal-ring-cover.jpg" 
-           alt="Opal engagement ring guide cover" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Opal Engagement Ring Guide: Beauty, Symbolism & Honest Advice for Couples </h2>
-        <p>
-           Find the beauty and meaning of opals, with customization tips, care advice, and expert insights..
-        </p>
-        <a href="/guides/opal-engagement-ring" class="button">Read Guide</a>
-       </div>
+        <article class="guide-card">
+          <img src="/images/tourmaline-engagement-cover.jpg" alt="Tourmaline Engagement Ring Guide" loading="lazy" decoding="async" />
+          <h2>Tourmaline Engagement Ring: A Colorful & Symbolic Diamond Alternative</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Explore the emotional symbolism, color options, and custom design possibilities of tourmaline engagement rings — a vibrant choice for couples seeking uniqueness and meaning.</p>
+          <a href="/guides/tourmaline-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-        <div class="guide-card">
-          <img 
-           src="/images/alexandrite-ring-style-options.jpg" 
-           alt="Alexandrite Engagement Ring Guide" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Alexandrite Engagement Rings: The Magical Color-Changing Gem </h2>
-        <p>
-           Explore the magic of color-changing alexandrite, its symbolism, and how to design a ring that reflects your journey.
-..
-        </p>
-        <a href="/guides/alexandrite-engagement-ring" class="button">Read Guide</a>
-       </div>
+        <article class="guide-card">
+          <img src="/images/opal-ring-cover.jpg" alt="Opal engagement ring guide cover" loading="lazy" decoding="async" />
+          <h2>Opal Engagement Ring Guide: Beauty, Symbolism & Honest Advice for Couples</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Find the beauty and meaning of opals, with customization tips, care advice, and expert insights.</p>
+          <a href="/guides/opal-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-       <div class="guide-card">
-          <img 
-           src="/images/moonstone-ring-rose-gold.jpg" 
-           alt="Moonstone Engagement Ring Guide" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Moonstone Engagement Rings: Feminine Light and Lunar Magic </h2>
-        <p>
-           Find the symbolism, style inspirations, and custom design options for magical moonstone rings.
-..
-        </p>
-        <a href="/guides/moonstone-engagement-ring" class="button">Read Guide</a>
-       </div>
+        <article class="guide-card">
+          <img src="/images/alexandrite-ring-style-options.jpg" alt="Alexandrite Engagement Ring Guide" loading="lazy" decoding="async" />
+          <h2>Alexandrite Engagement Rings: The Magical Color-Changing Gem</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Explore the magic of color-changing alexandrite, its symbolism, and how to design a ring that reflects your journey.</p>
+          <a href="/guides/alexandrite-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-       <div class="guide-card">
-          <img 
-           src="/images/moss-agate-ring-fern-inclusions.jpg" 
-           alt="Mossagate Wedding Ring Guide" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Moss Agate Wedding Ring: Nature's Whisper of Eternal Love </h2>
-        <p>
-           Explore the forest-like beauty and symbolism of moss agate wedding rings, and discover custom styles for both men and women that reflect lasting commitment and nature’s harmony.
-        </p>
-        <a href="/guides/moss-agate-wedding-ring" class="button">Read Guide</a>
-       </div>
-      <div class="guide-card">
-         <img
-    src="/images/custom-order-china-guide.jpg"
-    alt="How to Order a Custom Ring from China"
-    style="width: 100%; max-width: 320px; border-radius: 8px;"
-  />
-  <h2 style="margin-top: 1rem;">How to Order a Custom Ring from China: Step-by-Step Guide</h2>
-  <p>
-    Thinking about creating a one-of-a-kind ring overseas? Learn how to safely order a custom ring from China—step-by-step, with real tips on design, payment, and delivery. Find out what to expect and how to enjoy a smooth experience from inspiration to unboxing.
-  </p>
-  <a href="/guides/how-to-order-from-china" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/moonstone-ring-rose-gold.jpg" alt="Moonstone Engagement Ring Guide" loading="lazy" decoding="async" />
+          <h2>Moonstone Engagement Rings: Feminine Light and Lunar Magic</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Symbolism, style inspirations, and custom design options for magical moonstone rings.</p>
+          <a href="/guides/moonstone-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-   <div class="guide-card">
-          <img 
-           src="/images/emerald-cut-engagement-cover.jpg" 
-           alt="Emerald cut diamond solitaire on a velvet ring tray with Art-Deco mood lighting" 
-           style="width: 100%; max-width: 320px; border-radius: 8px;"
-          />
-        <h2 style="margin-top: 1rem;">Emerald Cut Engagement Rings: The Complete Guide </h2>
-        <p>
-           Learn why emerald-cut engagement rings feel so timeless: proportions, sparkle type, clarity choices, recommended settings, pros & cons, care tips, and how to customize a ring that fits your story
-        </p>
-        <a href="/guides/emerald-cut-engagement-rings" class="button">Read Guide</a>
-       </div>
+        <article class="guide-card">
+          <img src="/images/moss-agate-ring-fern-inclusions.jpg" alt="Moss agate wedding ring guide" loading="lazy" decoding="async" />
+          <h2>Moss Agate Wedding Ring: Nature's Whisper of Eternal Love</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Explore the forest-like beauty and symbolism of moss agate wedding rings for all genders — styles that reflect lasting commitment and nature’s harmony.</p>
+          <a href="/guides/moss-agate-wedding-ring" class="button">Read Guide</a>
+        </article>
 
-        <div class="guide-card">
-  <img
-    src="/images/black-diamond-engagement-ring.jpg"
-    alt="Black Diamond Engagement Ring Guide – bold, modern, and full of meaning"
-    style="width: 100%; max-width: 320px; border-radius: 8px;"
-  />
-  <h2 style="margin-top: 1rem;">
-    Black Diamond Engagement Rings: Bold, Modern, and Full of Meaning
-  </h2>
-  <p>
-    Learn what black diamonds are, their symbolism, pros &amp; cons, price ranges, and the best settings for both women’s rings and men’s bands—plus how to design your own.
-  </p>
-  <a href="/guides/black-diamond-engagement-ring" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/custom-order-china-guide.jpg" alt="How to Order a Custom Ring from China" loading="lazy" decoding="async" />
+          <h2>How to Order a Custom Ring from China: Step-by-Step Guide</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Create a one-of-a-kind ring overseas safely—step-by-step tips on design, payment and delivery. What to expect for a smooth journey from inspiration to unboxing.</p>
+          <a href="/guides/how-to-order-from-china" class="button">Read Guide</a>
+        </article>
 
-  <div class="guide-card">
-  <img
-    src="/images/sapphire-engagement-ring.jpg"
-    alt="Sapphire Engagement Ring Guide – colors, durability, care, and custom design"
-    style="width: 100%; max-width: 320px; border-radius: 8px;"
-  />
-  <h2 style="margin-top: 1rem;">
-    Sapphire Engagement Rings: Timeless Elegance Beyond Diamonds
-  </h2>
-  <p>
-    Explore royal symbolism, color options beyond blue, durability (Mohs 9), and design ideas—from solitaires to vintage halos—plus how to customize yours.
-  </p>
-  <a href="/guides/sapphire-engagement-ring" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/emerald-cut-engagement-cover.jpg" alt="Emerald cut diamond solitaire on a velvet ring tray with Art-Deco mood lighting" loading="lazy" decoding="async" />
+          <h2>Emerald Cut Engagement Rings: The Complete Guide</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Why emerald-cut rings feel timeless: proportions, sparkle, clarity, recommended settings, pros & cons, care tips, and how to customize a ring that fits your story.</p>
+          <a href="/guides/emerald-cut-engagement-rings" class="button">Read Guide</a>
+        </article>
 
-  <div class="guide-card">
-  <img
-    src="/images/ruby-story-b.jpg"
-    alt="Ruby Engagement Ring Guide – meaning, styles, price and care"
-    style="width:100%;max-width:320px;border-radius:8px;"
-  />
-  <h2 style="margin-top:1rem;">Ruby Engagement Rings: Passion, Heritage, and Lasting Fire</h2>
-  <p>
-    Learn ruby meaning, color grades, pros &amp; cons, vintage styles, pricing, care, and how to design your own — with two real client stories.
-  </p>
-  <a href="/guides/ruby-engagement-ring" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/black-diamond-engagement-ring.jpg" alt="Black Diamond Engagement Ring Guide – bold, modern, and full of meaning" loading="lazy" decoding="async" />
+          <h2>Black Diamond Engagement Rings: Bold, Modern, and Full of Meaning</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>What black diamonds are, symbolism, pros & cons, price ranges, and best settings for women’s rings and men’s bands—plus how to design your own.</p>
+          <a href="/guides/black-diamond-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-  <div class="guide-card">
-  <img
-    src="/images/vintage-eras-overview.jpg"
-    alt="Vintage Engagement Rings Guide – Art Deco, Victorian, Edwardian styles and buying tips"
-    style="width: 100%; max-width: 320px; border-radius: 8px;"
-  />
-  <h2 style="margin-top: 1rem;">Vintage Engagement Rings: Art Deco, Victorian, and Heirloom Romance</h2>
-  <p>
-    Learn key eras and hallmarks, iconic diamond cuts and settings, how to buy antique vs. custom vintage-style, pricing, care, and two real client stories.
-  </p>
-  <a href="/guides/vintage-engagement-rings" class="button">Read Guide</a>
-</div>
+        <article class="guide-card">
+          <img src="/images/sapphire-engagement-ring.jpg" alt="Sapphire Engagement Ring Guide – colors, durability, care, and custom design" loading="lazy" decoding="async" />
+          <h2>Sapphire Engagement Rings: Timeless Elegance Beyond Diamonds</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Royal symbolism, colors beyond blue, durability (Mohs 9), design ideas—from solitaires to vintage halos—plus how to customize yours.</p>
+          <a href="/guides/sapphire-engagement-ring" class="button">Read Guide</a>
+        </article>
 
-    </section>
+        <article class="guide-card">
+          <img src="/images/ruby-story-b.jpg" alt="Ruby Engagement Ring Guide – meaning, styles, price and care" loading="lazy" decoding="async" />
+          <h2>Ruby Engagement Rings: Passion, Heritage, and Lasting Fire</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Ruby meaning, color grades, pros & cons, vintage styles, pricing, care, and how to design your own — with two real client stories.</p>
+          <a href="/guides/ruby-engagement-ring" class="button">Read Guide</a>
+        </article>
+
+        <article class="guide-card">
+          <img src="/images/vintage-eras-overview.jpg" alt="Vintage Engagement Rings Guide – Art Deco, Victorian, Edwardian styles and buying tips" loading="lazy" decoding="async" />
+          <h2>Vintage Engagement Rings: Art Deco, Victorian, and Heirloom Romance</h2>
+          <div class="chips">
+            <span class="chip">⏱️ 7–15 days</span>
+            <span class="chip">🛠️ Customizable</span>
+          </div>
+          <p>Key eras and hallmarks, iconic diamond cuts/settings, how to buy antique vs. custom vintage-style, pricing, care, and two client stories.</p>
+          <a href="/guides/vintage-engagement-rings" class="button">Read Guide</a>
+        </article>
+
+      </section>
+
+      <!-- 列表页底部 CTA（与全站一致） -->
+      <div class="cta-row">
+        <a href="/#contact" class="btn btn--primary" id="cta-quote-guides">Get My Quote</a>
+        <a href="https://wa.me/8615347252138" class="btn btn--wa" target="_blank" rel="noopener" id="cta-wa-guides">WhatsApp</a>
+      </div>
     </main>
+  </div>
 
-    <footer style="text-align: center; margin-top: 3rem;">
-      <p>&copy; 2025 FashionHaydee. All rights reserved.</p>
-    </footer>
+  <footer style="text-align:center;margin-top:1.5rem;">
+    <p>© 2025 FashionHaydee. All rights reserved.</p>
+  </footer>
 
-    <style>
-      .guide-card {
-        max-width: 320px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .button {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        background-color: black;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        gap: 1.5rem;
-        padding: 1rem;
-        background: #f5f5f5;
-      }
-      nav a {
-        text-decoration: none;
-        color: black;
-      }
-    </style>
-  </body>
+  <!-- WhatsApp 预填 + UTM +（可扩展的点击日志） -->
+  <script>
+  (function(){
+    var wa = document.getElementById('cta-wa-guides');
+    if(wa){
+      var text = encodeURIComponent("Hi Haydee! I’m reading your guides and need quick advice for my custom ring.");
+      var utm  = "utm_source=website&utm_medium=guides&utm_campaign=guides_cta";
+      wa.href  = "https://wa.me/8615347252138?text="+text+"&"+utm;
+    }
+    function log(id,label){var el=document.getElementById(id);if(!el)return;el.addEventListener('click',()=>{ if(window.gtag){gtag('event','click_'+label,{event_category:'CTA',event_label:'guides'})} else {console.log('[CTA] guides',label)} });}
+    log('cta-quote-guides','quote'); log('cta-wa-guides','whatsapp');
+  })();
+  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
