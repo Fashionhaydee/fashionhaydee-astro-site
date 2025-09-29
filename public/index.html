@@ -556,6 +556,51 @@
   });
 })();
 </script>
+<!-- === Mobile Sticky CTA START === -->
+<div class="fh-stickybar" id="fh-stickybar" aria-hidden="true">
+  <a href="/#contact" class="fh-stickybar__btn fh-stickybar__quote" id="mb-quote">Get My Quote</a>
+  <a href="https://wa.me/8615347252138" target="_blank" rel="noopener" class="fh-stickybar__btn fh-stickybar__wa" id="mb-wa">WhatsApp</a>
+</div>
+<!-- === Mobile Sticky CTA END === -->
+<script>
+(function(){
+  const bar   = document.getElementById('fh-stickybar');
+  const btnWA = document.getElementById('mb-wa');
+  const btnQ  = document.getElementById('mb-quote');
+
+  // 只有滚动一段距离后才出现；滚动到页面底部的 footer 区域时稍微上浮避免遮挡
+  const footer = document.querySelector('footer');
+  function toggleBar(){
+    const scrolled = window.scrollY || document.documentElement.scrollTop;
+    if(scrolled > 400){ bar.setAttribute('aria-hidden','false'); }
+    else{ bar.setAttribute('aria-hidden','true'); }
+    if(footer){
+      const fb = footer.getBoundingClientRect();
+      bar.style.bottom = (fb.top < window.innerHeight ? (window.innerHeight - fb.top + 10) : 10) + 'px';
+    }
+  }
+  window.addEventListener('scroll', toggleBar, {passive:true});
+  window.addEventListener('resize', toggleBar);
+  toggleBar();
+
+  // WhatsApp 预填 + UTM
+  if(btnWA){
+    const text = encodeURIComponent("Hi Haydee! Quick question about a custom piece.");
+    const utm  = "utm_source=website&utm_medium=stickybar&utm_campaign=mobile_cta";
+    btnWA.href = `https://wa.me/8615347252138?text=${text}&${utm}`;
+  }
+
+  //（可选）点击日志（没装 GA4 也会在控制台打印）
+  function log(el, name){
+    if(!el) return;
+    el.addEventListener('click', ()=> {
+      if(window.gtag){ gtag('event','click_'+name,{event_category:'CTA',event_label:'stickybar'}); }
+      else{ console.log('[CTA] stickybar', name); }
+    });
+  }
+  log(btnWA,'whatsapp'); log(btnQ,'quote');
+})();
+</script>
     
 </body>
 </html>
