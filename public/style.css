@@ -1041,3 +1041,45 @@ input[type="file"] {
     grid-template-columns: 1fr;
   }
 }
+.about-subtitle{
+  margin: -.2rem 0 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #6b7280;
+  max-width: 56ch;
+}
+
+.about-process-visual{
+  margin: 1.2rem 0 2.2rem;
+}
+
+.about-visual-caption{
+  margin: .7rem 0 0;
+  font-size: .96rem;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.about-cta-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:1.2rem 0 0;
+}
+
+.about-btn-secondary{
+  background:#fff;
+  color:#111827;
+  border:1px solid #d1d5db;
+}
+
+.about-btn-secondary:hover{
+  background:#f9fafb;
+}
+
+@media (max-width:640px){
+  .about-cta-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+}
