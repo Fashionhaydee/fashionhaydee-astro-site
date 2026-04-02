@@ -2,193 +2,558 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-<title>Custom Process | Clear Steps for Custom Jewelry | FashionHaydee</title>
-<meta name="description" content="A clear custom jewelry process from idea to finished piece: design direction, quote, production, updates, and international delivery through our Guangzhou-based studio network."/>
-<link href="style.css" rel="stylesheet"/>
-<link rel="canonical" href="https://fashionhaydee.com/custom-process.html"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Process | Clear Steps for Custom Jewelry | FashionHaydee</title>
+  <meta name="description" content="A clear custom jewelry process from idea to finished piece: design direction, quote, production, updates, and international delivery through our Guangzhou-based studio network."/>
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="canonical" href="https://fashionhaydee.com/custom-process.html"/>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Custom Process | Clear Steps for Custom Jewelry | FashionHaydee">
-<meta property="og:description" content="A clearer way to turn your idea into a finished custom piece, with thoughtful guidance, realistic expectations, and reliable execution.">
-<meta property="og:url" content="https://fashionhaydee.com/custom-process.html">
-<meta property="og:image" content="https://fashionhaydee.com/images/banner.jpg">
-<meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Custom Process | Clear Steps for Custom Jewelry | FashionHaydee">
+  <meta property="og:description" content="A clearer way to turn your idea into a finished custom piece, with thoughtful guidance, realistic expectations, and reliable execution.">
+  <meta property="og:url" content="https://fashionhaydee.com/custom-process.html">
+  <meta property="og:image" content="https://fashionhaydee.com/images/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"HowTo",
-  "name":"Custom Jewelry Process",
-  "description":"A clear step-by-step process for turning a jewelry idea into a finished custom piece.",
-  "totalTime":"P15D",
-  "supply":[
-    {"@type":"HowToSupply","name":"925 silver or 14K/18K gold"},
-    {"@type":"HowToSupply","name":"Selected gemstones"}
-  ],
-  "step":[
-    {
-      "@type":"HowToStep",
-      "name":"Share Your Idea",
-      "text":"Send your inspiration images, sketches, story, gemstone preference, budget range, or timeline.",
-      "url":"https://fashionhaydee.com/custom-process.html#step1"
-    },
-    {
-      "@type":"HowToStep",
-      "name":"Confirm Design Direction",
-      "text":"Discuss the design direction, material options, and practical details before receiving a quote.",
-      "url":"https://fashionhaydee.com/custom-process.html#step2"
-    },
-    {
-      "@type":"HowToStep",
-      "name":"Production and Updates",
-      "text":"Once the design direction is confirmed and the deposit is received, production begins with updates when needed.",
-      "url":"https://fashionhaydee.com/custom-process.html#step3"
-    },
-    {
-      "@type":"HowToStep",
-      "name":"Final Review and Delivery",
-      "text":"Final photos or videos are shared when needed before dispatch, followed by international delivery support.",
-      "url":"https://fashionhaydee.com/custom-process.html#step4"
+  <style>
+    .page-wrap{
+      max-width:1180px;
+      margin:0 auto;
+      padding:0 16px;
     }
-  ]
-}
-</script>
+
+    nav.site-nav{
+      background:#fff;
+      padding:1rem 2rem;
+      box-shadow:0 2px 8px rgba(0,0,0,.05);
+    }
+
+    nav.site-nav ul{
+      list-style:none;
+      display:flex;
+      gap:1.5rem;
+      justify-content:center;
+      padding:0;
+      margin:0;
+      flex-wrap:wrap;
+    }
+
+    nav.site-nav a{
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+    }
+
+    .breadcrumbs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.4rem;
+      align-items:center;
+      font-size:.9rem;
+      color:#6b7280;
+      margin:.9rem 0 1rem;
+    }
+
+    .breadcrumbs a{
+      color:#374151;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+
+    .breadcrumbs span[aria-hidden="true"]{
+      color:#9ca3af;
+    }
+
+    .step-section{
+      text-align:left;
+      padding:1rem 0 0;
+    }
+
+    .step-section h1{
+      margin:0 0 1rem;
+      font-size:clamp(2rem,4vw,3.2rem);
+      line-height:1.1;
+      color:#111827;
+    }
+
+    .lead{
+      max-width:860px;
+      margin:0 0 1.5rem;
+      color:#4b5563;
+      line-height:1.8;
+      font-size:1.04rem;
+    }
+
+    .kpis{
+      display:flex;
+      gap:.6rem;
+      flex-wrap:wrap;
+      justify-content:flex-start;
+      margin:0 0 1.5rem;
+    }
+
+    .kpi{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      padding:.55rem .8rem;
+      border:1px solid #e5e7eb;
+      border-radius:9999px;
+      background:#fff;
+      box-shadow:0 1px 2px rgba(0,0,0,.04);
+      font-weight:600;
+      color:#111827;
+    }
+
+    .kpi em{
+      font-style:normal;
+      font-weight:500;
+      color:#6b7280;
+    }
+
+    .step-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:1.5rem;
+      margin-top:1rem;
+    }
+
+    .step-card{
+      background:#fff;
+      padding:1.25rem;
+      border-radius:16px;
+      border:1px solid #e5e7eb;
+      box-shadow:0 2px 10px rgba(0,0,0,.05);
+      text-align:left;
+    }
+
+    .step-card img{
+      width:100%;
+      aspect-ratio:4 / 3;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:.9rem;
+      display:block;
+    }
+
+    .no-image-card{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .step-card h3{
+      margin:.15rem 0 .5rem;
+      font-size:1.6rem;
+      line-height:1.25;
+      color:#111827;
+    }
+
+    .step-card p{
+      margin:.2rem 0 0;
+      color:#374151;
+      line-height:1.75;
+      font-size:1rem;
+    }
+
+    .step-note{
+      margin-top:.8rem !important;
+      color:#6b7280 !important;
+      font-size:.95rem !important;
+    }
+
+    .real-project{
+      margin:2.5rem 0 0;
+    }
+
+    .real-project h2,
+    .process-faq-lite h2,
+    .process-smoother h2{
+      margin:0 0 1rem;
+      font-size:clamp(1.7rem,3vw,2.4rem);
+      line-height:1.2;
+      color:#111827;
+    }
+
+    .real-project-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:1rem;
+    }
+
+    .real-project-card{
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:16px;
+      padding:1rem;
+      box-shadow:0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .real-project-card img{
+      width:100%;
+      aspect-ratio:4 / 5;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:.8rem;
+      display:block;
+    }
+
+    .real-project-card h3{
+      margin:0 0 .35rem;
+      font-size:1.12rem;
+      color:#111827;
+    }
+
+    .real-project-card p{
+      margin:0;
+      color:#4b5563;
+      line-height:1.7;
+    }
+
+    .process-faq-lite,
+    .process-smoother{
+      margin:2.4rem 0 0;
+    }
+
+    .process-faq-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:1rem;
+      margin-top:1rem;
+    }
+
+    .faq-lite-card{
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:16px;
+      padding:1rem;
+      box-shadow:0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .faq-lite-card h3{
+      margin:0 0 .45rem;
+      font-size:1.08rem;
+      line-height:1.45;
+      color:#111827;
+    }
+
+    .faq-lite-card p{
+      margin:0;
+      color:#4b5563;
+      line-height:1.75;
+    }
+
+    .cta-row{
+      text-align:left;
+      margin:2.4rem 0 1rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:.8rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.95rem 1.2rem;
+      border-radius:12px;
+      font-weight:700;
+      text-decoration:none;
+      transition:transform .06s, box-shadow .2s, background .2s;
+    }
+
+    .btn--primary{
+      background:#111;
+      color:#fff;
+    }
+
+    .btn--secondary{
+      background:#fff;
+      color:#111827;
+      border:1px solid #d1d5db;
+    }
+
+    .btn--secondary:hover{
+      background:#f9fafb;
+    }
+
+    .btn--wa{
+      background:#25D366;
+      color:#fff;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(0,0,0,.12);
+    }
+
+    .cta-trust{
+      margin:24px auto 16px;
+      padding:14px;
+      max-width:1120px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:16px;
+      box-shadow:0 8px 28px rgba(0,0,0,.06);
+    }
+
+    .cta-trust__head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      padding:6px 6px 10px;
+    }
+
+    .cta-trust h3{
+      margin:0;
+      font-size:1.25rem;
+    }
+
+    .cta-trust p{
+      margin:4px 0 0;
+      color:#6b7280;
+    }
+
+    .trust-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:10px;
+      padding:10px;
+      margin:0;
+      list-style:none;
+      border-top:1px solid #f0f2f5;
+    }
+
+    .trust-list li{
+      display:flex;
+      align-items:center;
+      gap:.6rem;
+      padding:.4rem .55rem;
+      border-radius:10px;
+      background:#fafafa;
+      border:1px solid #f1f5f9;
+    }
+
+    .trust-ico{
+      font-size:1.1rem;
+    }
+
+    .trust-list b{
+      color:#111827;
+    }
+
+    .trust-list em{
+      font-style:normal;
+      color:#6b7280;
+      font-size:.92rem;
+    }
+
+    @media (max-width:900px){
+      .step-grid,
+      .real-project-grid,
+      .process-faq-grid{
+        grid-template-columns:1fr;
+      }
+
+      .no-image-card{
+        min-height:auto;
+      }
+    }
+
+    @media (max-width:780px){
+      .btn{
+        padding:.85rem 1rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"Custom Jewelry Process",
+    "description":"A clear step-by-step process for turning a jewelry idea into a finished custom piece.",
+    "totalTime":"P15D",
+    "supply":[
+      {"@type":"HowToSupply","name":"925 silver or 14K/18K gold"},
+      {"@type":"HowToSupply","name":"Selected gemstones"}
+    ],
+    "step":[
+      {
+        "@type":"HowToStep",
+        "name":"Share Your Idea",
+        "text":"Send your inspiration images, sketches, story, gemstone preference, budget range, or timeline.",
+        "url":"https://fashionhaydee.com/custom-process.html#step1"
+      },
+      {
+        "@type":"HowToStep",
+        "name":"Confirm Design Direction",
+        "text":"Discuss the design direction, material options, and practical details before receiving a quote.",
+        "url":"https://fashionhaydee.com/custom-process.html#step2"
+      },
+      {
+        "@type":"HowToStep",
+        "name":"Production and Updates",
+        "text":"Once the design direction is confirmed and the deposit is received, production begins with updates when needed.",
+        "url":"https://fashionhaydee.com/custom-process.html#step3"
+      },
+      {
+        "@type":"HowToStep",
+        "name":"Final Review and Delivery",
+        "text":"Final photos or videos are shared when needed before dispatch, followed by international delivery support.",
+        "url":"https://fashionhaydee.com/custom-process.html#step4"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- 站点导航（保留你的结构） -->
-<nav class="site-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="custom-process.html">Process</a></li>
-    <li><a href="/guides.html">Guides</a></li>
-    <li><a href="content.html">Stories</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="custom-process.html">Process</a></li>
+      <li><a href="/guides.html">Guides</a></li>
+      <li><a href="content.html">Stories</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <div class="page-wrap">
-    <!-- 面包屑 -->
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Custom Process</span>
     </nav>
 
-<section class="step-section">
-  <h1>Custom Process</h1>
-  <p class="lead">
-    A clearer way to turn your idea into a finished custom piece.
-    From inspiration images and gemstone preferences to production and delivery,
-    each step is guided with thoughtful communication and realistic expectations.
-  </p>
-
-  <div class="kpis" aria-label="Key information">
-    <span class="kpi">⏱️ 7–15 business days <em>typical production time</em></span>
-    <span class="kpi">💳 30–50% deposit <em>to begin the project</em></span>
-    <span class="kpi">📦 Insured shipping <em>available for most destinations</em></span>
-  </div>
-
-  <div class="step-grid">
-    <div class="step-card" id="step1">
-      <img src="images/custom-step1.jpg" alt="Jewelry sketch and early inspiration for a custom ring" loading="lazy" decoding="async">
-      <h3>1. Share Your Idea</h3>
-      <p>
-        Send your inspiration images, sketches, story, preferred gemstone, metal choice,
-        budget range, or timeline. If you are not sure yet, that is completely fine.
-        Many clients begin with only a rough idea, and I help shape it into a practical direction.
+    <section class="step-section">
+      <h1>Custom Process</h1>
+      <p class="lead">
+        A clearer way to turn your idea into a finished custom piece.
+        From inspiration to design direction, production, and delivery, each step is guided with thoughtful communication and realistic expectations.
       </p>
-    </div>
 
-    <div class="step-card" id="step2">
-      <img src="images/custom-step2-real.jpg" alt="Reviewing custom jewelry design direction and technical details" loading="lazy" decoding="async">
-      <h3>2. Confirm Design Direction</h3>
-      <p>
-        After reviewing your idea, we discuss the overall direction, suitable materials,
-        and practical design considerations. Once the main details are clear, you receive
-        a quote based on design complexity, materials, and production requirements.
-      </p>
-      <p class="step-note">A 30–50% deposit is usually required to begin the project.</p>
-    </div>
+      <div class="kpis" aria-label="Key information">
+        <span class="kpi">⏱️ 7–15 business days <em>typical production time</em></span>
+        <span class="kpi">💳 30–50% deposit <em>to begin the project</em></span>
+        <span class="kpi">📦 Insured shipping <em>available for most destinations</em></span>
+      </div>
 
-    <div class="step-card" id="step3">
-      <img src="images/custom-step3.jpg" alt="Custom jewelry production and stone setting process" loading="lazy" decoding="async">
-      <h3>3. Production &amp; Updates</h3>
-      <p>
-        Once the design direction is confirmed and the deposit is received, production begins
-        through our Guangzhou-based studio and workshop network. Depending on the project,
-        this may include stone sourcing, wax carving, casting, setting, polishing, and finishing.
-      </p>
-      <p class="step-note">Typical production time is around 7–15 business days, depending on complexity and material availability.</p>
-    </div>
+      <div class="step-grid">
+        <div class="step-card" id="step1">
+          <img src="images/custom-step1.jpg" alt="Jewelry sketch and early inspiration for a custom piece" loading="lazy" decoding="async">
+          <h3>1. Share Your Idea</h3>
+          <p>
+            Send your inspiration images, sketches, story, preferred gemstone, metal choice,
+            budget range, or timeline. If you are not sure yet, that is completely fine.
+            Many clients begin with only a rough idea, and I help shape it into a practical direction.
+          </p>
+        </div>
 
-    <div class="step-card" id="step4">
-      <img src="images/custom-step4-review.jpg" alt="Final custom jewelry review before shipping" loading="lazy" decoding="async">
-      <h3>4. Final Review &amp; Delivery</h3>
-      <p>
-        Before shipping, final photos or videos are shared for review when needed.
-        The remaining balance is paid before dispatch, and the piece is then shipped
-        with international delivery support.
-      </p>
-      <p class="step-note">Insured shipping is available for most destinations.</p>
-    </div>
+        <div class="step-card no-image-card" id="step2">
+          <h3>2. Confirm Design Direction</h3>
+          <p>
+            After reviewing your idea, we discuss the overall direction, suitable materials,
+            and practical design considerations. Once the main details are clear, you receive
+            a quote based on design complexity, materials, and production requirements.
+          </p>
+          <p class="step-note">A 30–50% deposit is usually required to begin the project.</p>
+        </div>
+
+        <div class="step-card" id="step3">
+          <img src="images/custom-step3.jpg" alt="Jewelry production and stone setting process" loading="lazy" decoding="async">
+          <h3>3. Production &amp; Updates</h3>
+          <p>
+            Once the design direction is confirmed and the deposit is received, production begins
+            through our Guangzhou-based studio and workshop network. Depending on the project,
+            this may include stone sourcing, wax carving, casting, setting, polishing, and finishing.
+          </p>
+          <p class="step-note">Typical production time is around 7–15 business days, depending on complexity and material availability.</p>
+        </div>
+
+        <div class="step-card no-image-card" id="step4">
+          <h3>4. Final Review &amp; Delivery</h3>
+          <p>
+            Before shipping, final photos or videos are shared for review when needed.
+            The remaining balance is paid before dispatch, and the piece is then shipped
+            with international delivery support.
+          </p>
+          <p class="step-note">Insured shipping is available for most destinations.</p>
+        </div>
+      </div>
+
+      <section class="real-project" aria-labelledby="real-project-title">
+        <h2 id="real-project-title">A Real Project, From Sketch to Finished Piece</h2>
+        <div class="real-project-grid">
+          <div class="real-project-card">
+            <img src="images/process-pendant-concept.jpg" alt="Pendant concept sketch and design direction" loading="lazy" decoding="async">
+            <h3>Design idea</h3>
+            <p>Early concept sketch and visual direction for the pendant design.</p>
+          </div>
+
+          <div class="real-project-card">
+            <img src="images/process-pendant-confirmation.jpg" alt="Pendant structure and size confirmation" loading="lazy" decoding="async">
+            <h3>Design confirmation</h3>
+            <p>Final structure, proportions, and dimensions confirmed before production.</p>
+          </div>
+
+          <div class="real-project-card">
+            <img src="images/process-pendant-finished.jpg" alt="Finished custom pendant in hand" loading="lazy" decoding="async">
+            <h3>Finished piece</h3>
+            <p>The completed pendant, crafted and photographed after production.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-faq-lite" aria-labelledby="process-questions-title">
+        <h2 id="process-questions-title">What Clients Usually Ask</h2>
+
+        <div class="process-faq-grid">
+          <div class="faq-lite-card">
+            <h3>Do I need a full design before contacting you?</h3>
+            <p>No. A saved image, a sketch, a gemstone idea, or even a short description is enough to begin.</p>
+          </div>
+
+          <div class="faq-lite-card">
+            <h3>Can you help me choose stone and metal options?</h3>
+            <p>Yes. Guidance is available on gemstones, metals, proportions, and practical details based on design, wearability, and budget.</p>
+          </div>
+
+          <div class="faq-lite-card">
+            <h3>How long does a custom piece usually take?</h3>
+            <p>Most projects take around 7–15 business days after design direction and deposit are confirmed. More complex projects may take longer.</p>
+          </div>
+
+          <div class="faq-lite-card">
+            <h3>Will I receive updates during the process?</h3>
+            <p>Yes. Communication is kept clear throughout the project, especially when key decisions or confirmations are needed.</p>
+          </div>
+
+          <div class="faq-lite-card">
+            <h3>Do you ship internationally?</h3>
+            <p>Yes. International delivery is available, with insured shipping options for most destinations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-smoother" aria-labelledby="process-smoother-title">
+        <h2 id="process-smoother-title">What Helps a Project Move Smoothly</h2>
+        <p>
+          The clearest projects usually begin with a few useful details: reference images,
+          a budget range, size information, timeline, and openness to practical design guidance.
+        </p>
+      </section>
+
+      <div class="cta-row">
+        <a href="index.html#contact" class="btn btn--primary" id="cta-quote">Start Your Custom Piece</a>
+        <a href="content.html" class="btn btn--secondary" id="cta-stories">View Custom Stories</a>
+        <a href="https://wa.me/8615347252138" class="btn btn--wa" target="_blank" rel="noopener" id="cta-wa">WhatsApp</a>
+      </div>
+    </section>
   </div>
 
-  <div class="process-evidence">
-    <img src="images/process-workshop-grid.jpg" alt="Guangzhou jewelry studio and workshop process at FashionHaydee" loading="lazy" decoding="async">
-    <p>
-      Guided through a trusted Guangzhou-based studio and workshop network, each piece
-      moves from idea to practical execution with clarity and care.
-    </p>
-  </div>
-
-  <section class="process-faq-lite" aria-labelledby="process-questions-title">
-    <h2 id="process-questions-title">What Clients Usually Ask</h2>
-
-    <div class="process-faq-grid">
-      <div class="faq-lite-card">
-        <h3>Do I need a full design before contacting you?</h3>
-        <p>No. A saved image, a sketch, a gemstone idea, or even a short description is enough to begin.</p>
-      </div>
-
-      <div class="faq-lite-card">
-        <h3>Can you help me choose stone and metal options?</h3>
-        <p>Yes. Guidance is available on gemstones, metals, proportions, and practical details based on design, wearability, and budget.</p>
-      </div>
-
-      <div class="faq-lite-card">
-        <h3>How long does a custom piece usually take?</h3>
-        <p>Most projects take around 7–15 business days after design direction and deposit are confirmed. More complex projects may take longer.</p>
-      </div>
-
-      <div class="faq-lite-card">
-        <h3>Will I receive updates during the process?</h3>
-        <p>Yes. Communication is kept clear throughout the project, especially when key decisions or confirmations are needed.</p>
-      </div>
-
-      <div class="faq-lite-card">
-        <h3>Do you ship internationally?</h3>
-        <p>Yes. International delivery is available, with insured shipping options for most destinations.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="process-smoother" aria-labelledby="process-smoother-title">
-    <h2 id="process-smoother-title">What Helps a Project Move Smoothly</h2>
-    <p>
-      The clearest projects usually begin with a few useful details: reference images,
-      a budget range, size information, timeline, and openness to practical design guidance.
-    </p>
-  </section>
-
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn btn--primary" id="cta-quote">Start Your Custom Piece</a>
-    <a href="content.html" class="btn btn--secondary" id="cta-stories">View Custom Stories</a>
-    <a href="https://wa.me/8615347252138" class="btn btn--wa" target="_blank" rel="noopener" id="cta-wa">WhatsApp</a>
-  </div>
-</section>
-  </div>
-
-  <!-- 页尾复合CTA（与首页一致口径） -->
   <section class="cta-trust" role="region" aria-label="Get quote or chat">
     <div class="cta-trust__head">
       <div>
@@ -208,12 +573,10 @@
     </ul>
   </section>
 
-  <!-- 版权（保留你的 footer） -->
   <footer class="site-footer">
     <p style="text-align:center">© 2025 FashionHaydee | Handcrafted in Guangzhou</p>
   </footer>
 
-  <!-- 轻量 UTM & 预填；去掉页面里重复的浮动WA图标 -->
   <script>
   (function(){
     function prepWA(el, place){
