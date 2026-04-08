@@ -1,438 +1,268 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
-const pageTitle = "Marquise Engagement Ring: Why It’s Trending Again and Who It Suits Best";
-const whatsappUrl = "https://wa.me/YOURNUMBER";
-
-const faqItems = [
-  {
-    question: "Are marquise engagement rings still in style?",
-    answer:
-      "Yes. Marquise engagement rings have returned to attention because they feel distinctive, flattering, and more expressive than standard round styles. They also fit the wider movement toward vintage-inspired and design-led rings."
-  },
-  {
-    question: "Do marquise diamonds look bigger than other shapes?",
-    answer:
-      "They often appear larger than many people expect because the elongated outline creates strong finger coverage and visual spread."
-  },
-  {
-    question: "Who suits a marquise engagement ring best?",
-    answer:
-      "It often suits people who like elegant, elongated shapes, a slightly vintage mood, and rings that make the fingers appear longer and slimmer."
-  },
-  {
-    question: "Is a marquise engagement ring practical for everyday wear?",
-    answer:
-      "It can be, but the pointed tips need protection. A thoughtful setting and well-made prongs matter more with marquise stones than many buyers realize."
-  },
-  {
-    question: "What ratio looks best in a marquise diamond?",
-    answer:
-      "There is no single perfect ratio. Shorter marquise stones feel softer and broader, while longer ones feel sharper and more dramatic. The best choice depends on the overall mood you want."
-  }
-];
 ---
 
-<Layout title={pageTitle}>
-  <article class="prose lg:prose-lg mx-auto py-12 px-6 marquise-guide">
-    <p class="keywords">
-      <strong>Keywords:</strong> marquise engagement ring, marquise cut engagement ring, marquise diamond ring, vintage marquise engagement ring, marquise engagement ring pros and cons, east west marquise engagement ring
+<Layout title="Marquise Engagement Ring: Why It’s Trending Again and Who It Suits Best">
+  <article class="px-6 py-10 max-w-3xl mx-auto text-gray-800">
+    <h1 class="text-3xl font-bold mb-6">💍 Marquise Engagement Ring: Why It’s Trending Again and Who It Suits Best</h1>
+
+    <p class="mb-6">
+      In a market filled with round and oval engagement rings, the <strong>marquise engagement ring</strong> has returned with fresh appeal. Its elongated shape, pointed ends, and dramatic silhouette make it feel both elegant and expressive. Unlike more familiar cuts, marquise offers a stronger sense of personality while still feeling timeless and bridal.
     </p>
 
-    <h1>{pageTitle}</h1>
-
-    <p class="lead">
-      The marquise engagement ring is trending again for a simple reason: it offers drama, elegance, and individuality in one shape. Many classic engagement ring styles feel familiar at first glance, but marquise has a stronger point of view. It looks elongated, expressive, and slightly less expected than round or oval stones, while still feeling bridal and timeless.
+    <p class="mb-6">
+      What makes this shape especially relevant now is that it matches what many modern buyers are actually looking for: a ring that feels distinctive, flattering on the hand, and open to customization. A marquise stone can look vintage, romantic, sculptural, or modern depending on how it is set. That flexibility is exactly why more people are paying attention to it again.
     </p>
 
-    <p>
-      What makes the shape especially interesting today is that it answers several modern preferences at once. People want rings that feel personal rather than generic. They want something flattering on the hand, something visually strong in photos, and something that can be customized without losing refinement. Marquise does all of that unusually well. It carries a vintage echo, but depending on the setting, it can also feel very clean, modern, and fashion-aware.
+    <p class="mb-6">
+      In this guide, we will look at why the marquise engagement ring is trending again, who it suits best, what to consider before buying one, and how to turn the shape into a beautiful custom design.
     </p>
 
-    <p>
-      In this guide, we will look at why marquise engagement rings are back in focus, who they suit best, what to look for before buying one, and how to turn the shape into a custom ring that feels truly personal rather than trend-driven.
-    </p>
-
-    <figure>
+    <figure class="mb-8">
       <img
         src="/images/marquise-engagement-ring-hero.jpg"
         alt="Marquise engagement ring solitaire in yellow gold"
         loading="lazy"
         decoding="async"
+        class="w-full rounded-2xl shadow-md"
       />
-      <figcaption>
-        A marquise engagement ring stands out through its elongated silhouette, pointed ends, and strong finger coverage.
+      <figcaption class="text-sm text-gray-500 mt-3 text-center">
+        A marquise engagement ring stands out through its elongated silhouette, pointed ends, and elegant finger coverage.
       </figcaption>
     </figure>
 
-    <h2>Why Is the Marquise Engagement Ring Trending Again?</h2>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Why Is the Marquise Engagement Ring Trending Again?</h2>
 
-    <p>
-      First, people are clearly moving away from the idea that an engagement ring should look exactly like everyone else’s. For years, round and oval stones dominated popular taste. They are still beautiful, but many buyers now want a ring that feels more personal and less predictable. Marquise gives that feeling immediately. Even before anyone notices the details, the overall shape already communicates individuality.
+    <p class="mb-4">
+      First, many buyers no longer want an engagement ring that looks exactly like everyone else’s. Round and oval stones are still beautiful, but they have also become highly expected. Marquise feels different immediately. Even before someone looks closely at the details, the overall shape already suggests individuality.
     </p>
 
-    <p>
-      Second, the marquise cut fits beautifully into several overlapping design directions that are already strong: vintage influence, east-west settings, elongated stones, and statement silhouettes. This matters because a trend usually becomes durable only when it connects to a wider design movement. Marquise is not trending in isolation. It works naturally with the kinds of rings people are already saving, sharing, and searching for.
+    <p class="mb-4">
+      Second, the marquise cut fits naturally into several design directions that are already gaining attention: vintage-inspired rings, east-west settings, elongated center stones, and more expressive silhouettes. A trend becomes stronger when it connects to a wider design movement, and marquise does that very well.
     </p>
 
-    <p>
-      Third, the shape is visually efficient. A marquise stone often appears larger than many buyers expect because it stretches lengthwise across the finger and gives strong face-up presence. For someone comparing beauty, individuality, and budget all at once, that is a meaningful advantage. It is one of the few cuts that can feel dramatic without always requiring the biggest center stone.
+    <p class="mb-6">
+      Third, the shape is visually efficient. A marquise stone often appears larger than many buyers expect because it stretches across the finger and creates strong face-up presence. For someone balancing beauty, uniqueness, and budget, that is a very attractive advantage.
     </p>
 
-    <p>
-      The most important point, though, is this: the marquise ring is not attractive only because it is popular right now. It has returned because it solves a real aesthetic problem. It gives people a way to choose something distinctive without sacrificing elegance.
+    <h2 class="text-2xl font-semibold mt-10 mb-4">What Makes a Marquise Engagement Ring Different?</h2>
+
+    <p class="mb-4">
+      A marquise diamond is defined by its elongated body and two pointed ends. Compared with softer shapes like round or cushion cuts, marquise has more movement and direction. It creates a clear line across the hand and often feels more dramatic, even when the ring itself is minimal.
     </p>
 
-    <h2>What Makes a Marquise Engagement Ring Different?</h2>
-
-    <p>
-      A marquise diamond is defined by its elongated body and two pointed ends. That sounds simple, but the emotional effect is very specific. Compared with softer outlines like round or cushion cuts, marquise has more direction and movement. It pulls the eye outward. It creates a line across the hand. It tends to feel more dramatic, even when the design itself is fairly minimal.
+    <p class="mb-4">
+      This shape is also known for making the fingers appear longer and slimmer. That is one reason it photographs so beautifully. It gives the hand a more elegant rhythm and often looks more refined than buyers expect when they first consider it.
     </p>
 
-    <p>
-      This shape is also known for making fingers appear longer and slimmer. That is one reason it photographs so well. The silhouette naturally creates a more lengthened visual rhythm on the hand, which many people find elegant and flattering. If a client wants a ring that feels refined yet noticeable, marquise often performs better than expected.
+    <p class="mb-6">
+      Marquise also carries more personality than many traditional shapes. Depending on the setting, it can feel romantic, regal, vintage, modern, or fashion-forward. The center stone already has character before you add halos, side stones, engraving, or custom details.
     </p>
 
-    <p>
-      There is also a deeper reason some people connect with it immediately: marquise carries character. It can look romantic, slightly regal, slightly vintage, or fashion-forward depending on how it is set. The stone itself already has identity before you add halos, side stones, engraving, or custom band details.
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Who Does a Marquise Engagement Ring Suit Best?</h2>
+
+    <p class="mb-4">
+      A marquise engagement ring usually suits someone who wants a ring with more personality than a classic round solitaire. Not because they want something extreme, but because they want something memorable. If traditional engagement rings feel beautiful but a little too familiar, marquise often feels like the right next step.
     </p>
 
-    <h2>Who Does a Marquise Engagement Ring Suit Best?</h2>
-
-    <p>
-      A marquise engagement ring usually suits someone who does not want the safest possible choice. Not because they want something extreme, but because they want something with personality. If a person looks at traditional round solitaires and feels that they are beautiful but a little too familiar, marquise often becomes a natural next step.
+    <p class="mb-4">
+      It is especially flattering for people who like elongated visual lines. Because the stone naturally stretches vertically when worn north-south, it can make the fingers appear longer and slimmer. This is one of the reasons the cut feels so elegant on the hand.
     </p>
 
-    <p>
-      It is especially flattering for people who like elongated visual lines. If someone wants their fingers to appear longer or slimmer, marquise is often a strong option because the shape naturally emphasizes vertical movement when worn north-south. It also suits those who enjoy a more elegant, directional silhouette rather than a soft, centered, perfectly balanced circle.
-    </p>
-
-    <p>From a style point of view, marquise tends to work well for people who like:</p>
-
-    <ul>
-      <li>vintage-inspired jewelry with a little romance</li>
+    <p class="mb-3">From a style point of view, marquise tends to suit people who like:</p>
+    <ul class="list-disc list-inside mb-6">
+      <li>vintage-inspired jewelry with a romantic mood</li>
       <li>rings that feel distinctive but still timeless</li>
       <li>elongated stones and elegant finger coverage</li>
-      <li>designs with a touch of drama rather than total minimalism</li>
+      <li>designs with a little drama rather than total minimalism</li>
       <li>custom rings that can be shaped into something personal</li>
     </ul>
 
-    <p>
-      It is also a strong fit for someone who likes symbolism in design. Because the stone is already expressive, it pairs beautifully with botanical motifs, leaf-inspired bands, sculptural prongs, antique-style halos, and east-west settings. In other words, marquise does not just suit a hand. It suits a point of view.
+    <p class="mb-6">
+      It is also a strong fit for buyers who enjoy symbolism in design. Because the shape already feels expressive, it pairs beautifully with leaf-inspired bands, botanical details, sculptural prongs, antique halos, and east-west settings.
     </p>
 
-    <h2>Who Might Not Love a Marquise Ring?</h2>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Who Might Not Love a Marquise Ring?</h2>
 
-    <p>
-      Not every ring should be for everyone. Marquise may be less appealing to someone who strongly prefers extremely quiet, understated jewelry. If the ideal ring in their mind is small, soft, and almost invisible in presence, the pointed ends and elongated shape may feel too directional.
-    </p>
-
-    <p>
-      It may also be a less natural fit for someone who wants the most universally classic look possible. Round diamonds remain the easiest shorthand for “traditional engagement ring.” Marquise is still classic, but it is a more opinionated classic. That is exactly why some people love it and others do not.
+    <p class="mb-4">
+      Not every ring should be for everyone. Marquise may be less appealing to someone who strongly prefers very quiet, understated jewelry. If the ideal ring is small, soft, and visually subtle, the pointed ends and elongated shape may feel too directional.
     </p>
 
-    <p>
-      Practical lifestyle matters too. A marquise ring can absolutely be made for everyday wear, but the setting needs thought. If someone is very rough with their hands and wants to ignore the ring completely, they may prefer a shape with fewer exposed visual points. With marquise, the details of execution matter more.
+    <p class="mb-4">
+      It may also be less natural for someone who wants the most universally traditional engagement ring look possible. Round diamonds remain the easiest shorthand for classic bridal style. Marquise is still classic, but it is a more opinionated classic.
     </p>
 
-    <h2>Pros and Cons of a Marquise Engagement Ring</h2>
-
-    <h3>Pros</h3>
-    <p>
-      <strong>It usually looks larger than people expect.</strong> The elongated outline creates strong visual spread, which makes the stone feel substantial on the hand.
-    </p>
-    <p>
-      <strong>It flatters the fingers.</strong> The line of the stone naturally lengthens the look of the hand, which is one of the cut’s most attractive qualities.
-    </p>
-    <p>
-      <strong>It feels distinctive without becoming hard to wear.</strong> Marquise is more individual than round, but still refined and recognizably bridal.
-    </p>
-    <p>
-      <strong>It is highly design-responsive.</strong> Small changes in orientation, band width, claw style, or side stone choice can completely change the mood of the ring.
+    <p class="mb-6">
+      Practical lifestyle also matters. A marquise ring can absolutely work for daily wear, but the setting needs thought. If someone is very rough with their hands and does not want to think about the ring at all, a shape with fewer exposed points may feel easier.
     </p>
 
-    <h3>Cons</h3>
-    <p>
-      <strong>The pointed tips need protection.</strong> This is one of the most important technical considerations when choosing a marquise stone for daily wear.
-    </p>
-    <p>
-      <strong>Symmetry matters a lot.</strong> If the two sides do not balance well, the whole shape can feel visually off.
-    </p>
-    <p>
-      <strong>The bow-tie effect needs attention.</strong> Some marquise stones show darker contrast across the center. A little contrast can be normal, but too much can weaken the beauty of the stone.
-    </p>
-    <p>
-      <strong>It is not emotionally neutral.</strong> Some buyers want a universally safe look. Marquise always says something a little stronger than that.
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Pros and Cons of a Marquise Engagement Ring</h2>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3">Pros</h3>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>It usually looks larger than expected.</strong> The elongated outline creates strong visual spread.</li>
+      <li><strong>It flatters the fingers.</strong> The stone naturally lengthens the look of the hand.</li>
+      <li><strong>It feels distinctive.</strong> Marquise is more individual than round, while still feeling bridal.</li>
+      <li><strong>It is highly customizable.</strong> Orientation, band width, prong style, and side stones can all change its mood.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3">Cons</h3>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>The pointed tips need protection.</strong> Setting quality matters more than many buyers realize.</li>
+      <li><strong>Symmetry matters a lot.</strong> If the two sides are not balanced, the shape can feel off.</li>
+      <li><strong>The bow-tie effect needs attention.</strong> Some stones show darker contrast across the center.</li>
+      <li><strong>It is not emotionally neutral.</strong> Marquise always has a stronger visual opinion than safer classic cuts.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">What to Look for Before Buying a Marquise Diamond</h2>
+
+    <p class="mb-4">
+      The first thing to evaluate is the outline. A marquise should feel balanced from tip to tip. If one side looks fuller, narrower, or slightly twisted compared with the other, the eye often notices it immediately. In a shape as directional as marquise, symmetry is part of the beauty.
     </p>
 
-    <h2>What to Look for Before Buying a Marquise Diamond</h2>
-
-    <p>
-      The first thing to evaluate is the outline. A marquise should feel balanced from tip to tip. If one side looks fuller, narrower, or slightly twisted compared with the other, the eye will often notice it immediately, even if the buyer cannot explain why. This is not a small detail. In a shape as directional as marquise, symmetry is part of the beauty.
+    <p class="mb-4">
+      Next, pay attention to the center of the stone. Elongated fancy cuts can show what buyers often call a bow-tie effect: a darker area of contrast across the middle. Some contrast is normal, but if it dominates the stone, the ring can lose life and brightness.
     </p>
 
-    <p>
-      Next, pay attention to the center of the stone. Elongated fancy cuts can show what buyers often call a bow-tie effect: a darker area of contrast across the middle. Some degree of contrast is normal, but when it becomes too dominant, the stone can look dull instead of lively. This is something that should be checked through real photos and videos, not only through certificate data.
+    <p class="mb-4">
+      Ratio is another important decision. There is no single perfect ratio for every marquise ring. A shorter marquise feels softer, broader, and sometimes more vintage. A longer marquise feels sharper, leaner, and more dramatic. The right ratio depends on the overall mood of the ring and the person wearing it.
     </p>
 
-    <p>
-      Ratio is another important decision. There is no single perfect ratio for every marquise ring. A shorter marquise feels softer, broader, and sometimes slightly more antique. A longer marquise feels sharper, leaner, and more dramatic. Neither is automatically better. The right ratio depends on the mood of the ring, the size of the hand, the band design, and the personality of the person wearing it.
+    <p class="mb-6">
+      Finally, do not separate the stone from the setting. A marquise needs thoughtful execution. Tip protection, prong placement, band proportion, and overall orientation all affect whether the finished ring feels beautiful and wearable.
     </p>
 
-    <p>
-      Finally, do not separate the stone from the setting. A marquise needs thoughtful execution. Tip protection, prong placement, band proportion, and overall orientation all affect whether the finished ring feels beautiful, wearable, and intentional.
-    </p>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Four Marquise Ring Directions</h2>
 
-    <h2>Four Marquise Ring Directions</h2>
-
-    <figure>
+    <figure class="mb-8">
       <img
         src="/images/marquise-ring-style-comparison.jpg"
         alt="North south and east west marquise engagement ring comparison"
         loading="lazy"
         decoding="async"
+        class="w-full rounded-2xl shadow-md"
       />
-      <figcaption>
+      <figcaption class="text-sm text-gray-500 mt-3 text-center">
         The same marquise shape can feel very different depending on orientation: north-south feels classic and elongating, while east-west feels more modern and directional.
       </figcaption>
     </figure>
 
-    <h3>A. The Classic North-South Solitaire</h3>
-    <p>
-      This is the purest way to wear a marquise stone. The ring feels long, elegant, and timeless, with the shape itself doing most of the work. It is a strong choice for someone who wants a ring with presence but does not want the design to become overly ornate.
+    <h3 class="text-xl font-semibold mt-6 mb-3">A. The Classic North-South Solitaire</h3>
+    <p class="mb-4">
+      This is the purest way to wear a marquise stone. The ring feels long, elegant, and timeless, with the shape itself doing most of the work. It is ideal for someone who wants presence without excessive ornament.
     </p>
-    <p>
-      The success of this style depends heavily on proportion. Because the ring is visually simple, details like ratio, prongs, band width, and profile become more important. Done well, it feels strong and effortless.
-    </p>
-
-    <h3>B. The East-West Marquise Ring</h3>
-    <p>
-      Turning the stone horizontally changes the whole personality of the ring. East-west marquise settings feel more contemporary, more design-led, and slightly more relaxed. They are especially appealing to buyers who want something current without choosing a completely unconventional stone.
-    </p>
-    <p>
-      This direction works beautifully in yellow gold and is often a strong match for someone who wants a modern heirloom feeling rather than a strict traditional bridal look.
+    <p class="mb-6">
+      Because the ring is visually clean, details like ratio, prongs, band width, and profile become especially important. Done well, it feels effortless and refined.
     </p>
 
-    <h3>C. The Vintage Halo Marquise</h3>
-    <p>
-      If the solitaire is the clean version of marquise, the vintage halo is the romantic version. This approach adds softness around the pointed silhouette and can make the ring feel more ornate, more luminous, and more emotionally detailed.
+    <h3 class="text-xl font-semibold mt-6 mb-3">B. The East-West Marquise Ring</h3>
+    <p class="mb-4">
+      Turning the stone horizontally changes the entire personality of the ring. East-west marquise settings feel more contemporary, more design-led, and slightly more relaxed. They are ideal for buyers who want something current without choosing a completely unconventional stone.
     </p>
-    <p>
-      It suits people who love antique references, lace-like details, milgrain, and a ring that feels a little more story-filled. The marquise shape holds this mood especially well because it already carries a sense of movement and ornament.
+    <p class="mb-6">
+      This direction works especially well in yellow gold and often feels like a modern heirloom rather than a strictly traditional bridal ring.
     </p>
 
-    <h3>D. The Botanical or Leaf-Inspired Marquise</h3>
+    <h3 class="text-xl font-semibold mt-6 mb-3">C. The Vintage Halo Marquise</h3>
+    <p class="mb-4">
+      If the solitaire is the clean version of marquise, the vintage halo is the romantic version. This direction adds softness around the pointed silhouette and can make the ring feel more ornate, luminous, and emotionally detailed.
+    </p>
+    <p class="mb-6">
+      It suits people who love antique references, lace-like detail, milgrain, and a ring that feels slightly more story-filled. The marquise shape holds this mood especially well because it already carries movement and ornament.
+    </p>
 
-    <figure>
+    <h3 class="text-xl font-semibold mt-6 mb-3">D. The Botanical or Leaf-Inspired Marquise</h3>
+
+    <figure class="mb-8">
       <img
         src="/images/botanical-marquise-engagement-ring.jpg"
         alt="Botanical marquise engagement ring with leaf inspired details"
         loading="lazy"
         decoding="async"
+        class="w-full rounded-2xl shadow-md"
       />
-      <figcaption>
+      <figcaption class="text-sm text-gray-500 mt-3 text-center">
         Marquise pairs naturally with leaf, vine, and floral details because the shape already suggests movement and softness.
       </figcaption>
     </figure>
 
-    <p>
-      This is one of the most natural custom directions for marquise. The stone shape already feels organic and flowing, so it works beautifully with leaf motifs, branching details, petal-like side stones, or softly sculpted bands.
+    <p class="mb-4">
+      This is one of the most natural custom directions for marquise. The stone shape already feels organic and flowing, so it works beautifully with leaf motifs, branching details, petal-like accents, or softly sculpted bands.
     </p>
-    <p>
+    <p class="mb-6">
       For someone who wants a ring that feels personal, feminine, and artistic without losing refinement, this is often one of the most rewarding paths to explore.
     </p>
 
-    <h2>What Clients Often Realize After Looking at Marquise Rings</h2>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">What Clients Often Realize After Looking at Marquise Rings</h2>
 
-    <p>
-      In practice, many people are drawn to marquise because it looks dramatic in inspiration photos. But once they start comparing real rings, their preference usually becomes more specific. Some discover that they like a shorter, softer marquise rather than a very long one. Some think they want a vintage halo, then realize a clean solitaire feels more like them. Others fall for the shape only after seeing it turned east-west.
+    <p class="mb-4">
+      In practice, many people are drawn to marquise because it looks dramatic in inspiration photos. But once they begin comparing real rings, their preference usually becomes more specific. Some discover that they like a shorter, softer marquise rather than a very long one. Some think they want a vintage halo, then realize a clean solitaire feels more like them. Others only fall for the shape after seeing it turned east-west.
     </p>
 
-    <p>
-      That is why marquise works so well in custom jewelry. It is not a shape that should be copied mechanically from one image. It is a shape that rewards fine adjustment. A small change in the ratio can shift the ring from sharp to romantic. A change in prong style can move it from vintage to architectural. A thinner band can make it feel more delicate; a heavier band can make it feel more sculptural and grounded.
+    <p class="mb-4">
+      That is why marquise works so well in custom jewelry. It is not a shape that should be copied mechanically from one photo. It is a shape that rewards fine adjustment. A small change in ratio can shift the ring from sharp to romantic. A change in prong style can move it from vintage to architectural. A thinner band can make it feel more delicate; a heavier band can make it more sculptural and grounded.
     </p>
 
-    <p>
-      The best marquise ring is rarely the one that looks most dramatic on a trend board. It is the one whose proportion, setting, and mood feel right for the person who will wear it every day.
+    <p class="mb-6">
+      The best marquise ring is rarely the one that looks most dramatic on a trend board. It is the one whose proportion, setting, and overall mood feel right for the person who will wear it every day.
     </p>
 
-    <h2>Design Your Own Marquise Engagement Ring</h2>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Design Your Own Marquise Engagement Ring</h2>
 
-    <ul class="design-options">
-      <li>
-        <strong>Stone mood:</strong> choose a softer marquise for a romantic feel or a longer, sharper marquise for a more dramatic silhouette.
-      </li>
-      <li>
-        <strong>Orientation:</strong> north-south feels classic and elongating, while east-west feels more modern and design-led.
-      </li>
-      <li>
-        <strong>Setting style:</strong> solitaire, halo, pavé band, vintage details, or botanical elements all create very different personalities.
-      </li>
-      <li>
-        <strong>Metal tone:</strong> yellow gold warms the design, white gold feels crisp and refined, and rose gold can add softness and romance.
-      </li>
-      <li>
-        <strong>Detail level:</strong> keep it minimal for a clean statement or add side stones, engraving, or organic textures for something more personal.
-      </li>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>Stone mood:</strong> choose a softer marquise for a romantic feel or a longer, sharper marquise for a more dramatic silhouette.</li>
+      <li><strong>Orientation:</strong> north-south feels classic and elongating, while east-west feels more modern and design-led.</li>
+      <li><strong>Setting style:</strong> solitaire, halo, pavé band, vintage details, or botanical elements all create very different personalities.</li>
+      <li><strong>Metal tone:</strong> yellow gold feels warm, white gold feels crisp, and rose gold adds softness.</li>
+      <li><strong>Detail level:</strong> keep it minimal for a clean statement or add side stones, engraving, or organic textures for something more personal.</li>
     </ul>
 
-    <p class="closing-line">
+    <p class="mb-8 text-lg font-medium text-gray-800">
       A marquise engagement ring is trending again because it gives people something many classic rings no longer do: unmistakable shape, emotional character, and real room for personalization.
     </p>
 
-    <div class="cta-box">
-      <h2>Start Your Custom Jewelry</h2>
-      <p>
+    <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 mt-10 mb-10">
+      <h2 class="text-2xl font-semibold mb-3">Start Your Custom Jewelry</h2>
+      <p class="mb-4">
         If you are considering a marquise engagement ring, the most important step is not copying a trend image. It is finding the right proportion, setting, and overall mood for the person who will wear it. We can help turn your inspiration into a ring that feels elegant, personal, and wearable.
       </p>
-      <div class="cta-actions">
-        <a class="btn-primary" href="/contact/">Start Your Custom Jewelry</a>
-        <a
-          class="btn-secondary"
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat on WhatsApp"
-        >
-          <span class="wa-icon" aria-hidden="true">✦</span>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="/contact/" class="inline-flex items-center justify-center rounded-full bg-stone-900 text-white px-5 py-3 font-semibold no-underline">
+          Start Your Custom Jewelry
+        </a>
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white text-stone-900 px-5 py-3 font-semibold no-underline">
           WhatsApp
         </a>
       </div>
     </div>
 
-    <h2>FAQ</h2>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">FAQ</h2>
 
-    <div class="faq-list">
-      {faqItems.map((item) => (
-        <div class="faq-item">
-          <h3>{item.question}</h3>
-          <p>{item.answer}</p>
-        </div>
-      ))}
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Are marquise engagement rings still in style?</h3>
+        <p>Yes. Marquise engagement rings have returned to attention because they feel distinctive, flattering, and more expressive than standard round styles. They also fit the wider movement toward vintage-inspired and design-led rings.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Do marquise diamonds look bigger than other shapes?</h3>
+        <p>They often appear larger than many people expect because the elongated outline creates strong finger coverage and visual spread.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Who suits a marquise engagement ring best?</h3>
+        <p>It often suits people who like elegant, elongated shapes, a slightly vintage mood, and rings that make the fingers appear longer and slimmer.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Is a marquise engagement ring practical for everyday wear?</h3>
+        <p>It can be, but the pointed tips need protection. A thoughtful setting and well-made prongs matter more with marquise stones than many buyers realize.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-2">What ratio looks best in a marquise diamond?</h3>
+        <p>There is no single perfect ratio. Shorter marquise stones feel softer and broader, while longer ones feel sharper and more dramatic. The best choice depends on the overall mood you want.</p>
+      </div>
     </div>
   </article>
-
-  <style>
-    .marquise-guide .keywords {
-      font-size: 0.96rem;
-      color: #7a6557;
-      margin-bottom: 0.75rem;
-    }
-
-    .marquise-guide .lead {
-      font-size: 1.12rem;
-      color: #3a2e27;
-    }
-
-    .marquise-guide figure {
-      margin: 1.8rem 0;
-    }
-
-    .marquise-guide figure img {
-      width: 100%;
-      display: block;
-      border-radius: 18px;
-      object-fit: cover;
-      box-shadow: 0 10px 28px rgba(40, 28, 20, 0.08);
-    }
-
-    .marquise-guide figcaption {
-      font-size: 0.95rem;
-      color: #7a6557;
-      margin-top: 0.75rem;
-      text-align: center;
-    }
-
-    .marquise-guide .design-options {
-      background: #fbf6f1;
-      border: 1px solid #eaded1;
-      border-radius: 18px;
-      padding: 1.2rem 1.25rem;
-      margin-top: 1rem;
-    }
-
-    .marquise-guide .closing-line {
-      font-size: 1.12rem;
-      font-weight: 500;
-      margin-top: 2rem;
-      color: #2b201a;
-    }
-
-    .marquise-guide .cta-box {
-      margin-top: 2.5rem;
-      padding: 1.6rem;
-      border-radius: 22px;
-      background: linear-gradient(180deg, #fbf5ef 0%, #f5ece4 100%);
-      border: 1px solid #eadfd3;
-    }
-
-    .marquise-guide .cta-box h2 {
-      margin-top: 0;
-    }
-
-    .marquise-guide .cta-actions {
-      display: flex;
-      gap: 0.85rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-
-    .marquise-guide .btn-primary,
-    .marquise-guide .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.55rem;
-      padding: 0.9rem 1.25rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .marquise-guide .btn-primary {
-      background: #2b201a;
-      color: #fffaf7;
-    }
-
-    .marquise-guide .btn-secondary {
-      background: #ffffff;
-      color: #2b201a;
-      border: 1px solid #d9c8ba;
-    }
-
-    .marquise-guide .faq-list {
-      margin-top: 1.25rem;
-    }
-
-    .marquise-guide .faq-item {
-      padding: 1.1rem 0;
-      border-top: 1px solid #eee1d6;
-    }
-
-    .marquise-guide .faq-item:last-child {
-      border-bottom: 1px solid #eee1d6;
-    }
-
-    .marquise-guide .faq-item h3 {
-      margin-top: 0;
-      margin-bottom: 0.45rem;
-      font-size: 1.1rem;
-    }
-
-    .marquise-guide .wa-icon {
-      font-size: 0.9rem;
-      line-height: 1;
-    }
-
-    @media (max-width: 720px) {
-      .marquise-guide .cta-actions {
-        flex-direction: column;
-      }
-
-      .marquise-guide .btn-primary,
-      .marquise-guide .btn-secondary {
-        width: 100%;
-      }
-    }
-  </style>
 </Layout>
