@@ -241,99 +241,75 @@
 </div>
 </div>
 </section>
-<section class="contact" id="contact">
-<!-- ==== Discreet Budget Helper ==== -->
-<section class="fh-budget" aria-label="Budget helper">
-  <h3 class="fh-budget__title">Not sure about budget?</h3>
-  <p class="fh-budget__sub">Tell me roughly where you’d like to start — I’ll recommend metals & stones that fit.</p>
-  <div class="fh-budget__actions">
-    <button class="btn" data-b="starter">I’m exploring</button>
-    <button class="btn" data-b="standard">Have an idea</button>
-    <button class="btn" data-b="premium">Premium details</button>
-  </div>
-</section>
-    
-<h2>Contact Us</h2>
-<p>Tell us your idea, and we’ll bring it to life.</p>
-<form action="https://formspree.io/f/xrbqldnv" method="POST" enctype="multipart/form-data">
-  <input name="name" placeholder="Your Name" required type="text" />
-  <input name="email" placeholder="Your Email" required type="email" />
-  <textarea name="message" placeholder="What do you want to create?" required></textarea>
-    <label>
-  <input
-    type="text"
-    name="budget"
-    placeholder="Preferred Budget (USD)"
-    style="margin-bottom: 1rem; width: 100%; padding: 12px;"
-  />
-</label>
+<section class="contact contact-clean" id="contact">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <p class="section-kicker">Start your project</p>
+      <h2>Contact Us</h2>
+      <p class="contact-lead">
+        Tell us your idea, and we’ll help you shape it into a custom piece with
+        clear communication and realistic guidance.
+      </p>
 
-<label>
-  <input
-    type="text"
-    name="metalGem"
-    placeholder="Metal / Gem preference (optional)"
-    style="margin-bottom: 1.5rem; width: 100%; padding: 12px;"
-  />
-</label>
-<p style="text-align:center;color:#6b7280">
-  Free resources: <a href="/docs/FashionHaydee_Custom_Order_Quick_Guide_FAQ.pdf" download>1-page Quick Guide</a> ·
-  <a href="/docs/FashionHaydee_Ring_Size_Conversion_Chart.pdf" download>Ring Size Chart</a>
-</p>
+      <div class="contact-direct">
+        <p><strong>Email:</strong> <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/8615347252138" target="_blank" rel="noopener">+86 153 4725 2138</a></p>
+      </div>
 
-<button class="cta-button" type="submit">Start Your Design →</button>
-
-<label for="attachment" style="display: block; text-align: left; margin: 1rem 0 0.5rem; font-weight: 500;">
-  Optional Attachment (not required):
-</label>
-
-<div class="file-upload">
-  <label class="custom-file-upload">
-    📎 Upload Reference File
-    <input type="file" id="attachment" name="attachment" accept=".jpg,.png,.pdf,.docx,.zip" onchange="updateFileName(this)">
-  </label>
-  <span id="file-name">No file selected</span>
-</div>
-
-<p>Prefer email? You can also reach us at <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a></p>
-<p>Or reach out directly:<br/>
-      Email: <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a><br/>
-      WhatsApp: <a href="https://wa.me/8615347252138" target="_blank">+86 153 4725 2138</a>
-</p>
-</section>
- <div style="text-align: center; margin-top: 2rem;">
-  <a href="#contact" class="cta-button">Start Your Custom Jewelry →</a>
-  <a href="https://wa.me/8615347252138" target="_blank" style="margin-left: 12px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height: 28px; vertical-align: middle;" />
-  </a>
-</div>
-   
-<!-- === Composite Footer CTA START === -->
-<section class="fh-cta-footer" role="region" aria-label="Get quote or chat">
-  <div class="fh-cta-footer__head">
-    <div class="fh-cta-footer__text">
-      <h3>Ready to Start?</h3>
-      <p>Get a tailored quote in minutes or chat with Haydee for quick advice.</p>
+      <p class="contact-help">
+        Helpful to include: inspiration images, budget range, metal or gemstone preference, and timeline.
+      </p>
     </div>
-    <div class="fh-cta-footer__actions">
-      <a href="#contact" class="fh-btn fh-btn--primary" id="fh-cta-quote">Get My Quote</a>
-      <a href="https://wa.me/8615347252138" target="_blank" rel="noopener" class="fh-btn fh-btn--wa" id="fh-cta-wa">WhatsApp</a>
-    </div>
-  </div>
 
-  <ul class="fh-cta-footer__trust" aria-label="Service guarantees">
-    <li><span>⏱️</span><b>7–15 business days</b><em>typical timeline</em></li>
-    <li><span>💳</span><b>30–50% deposit</b><em>design kick-off</em></li>
-    <li><span>📦</span><b>Insured shipping</b><em>worldwide</em></li>
-    <li><span>🔧</span><b>One free resize</b><em>within 30 days</em></li>
-  </ul>
+    <form
+      class="contact-form-clean"
+      action="https://formspree.io/f/xrbqldnv"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
 
-  <div class="fh-cta-footer__contact" aria-label="Contact options">
-    <a href="mailto:hello@fashionhaydee.com">hello@fashionhaydee.com</a>
-    <span>•</span>
-    <a href="https://wa.me/8615347252138" target="_blank" rel="noopener">+86 153 4725 2138</a>
-    <span>•</span>
-    <a href="/faq.html">FAQ</a>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required>
+        </div>
+
+        <div class="field">
+          <label for="budget">Preferred Budget (optional)</label>
+          <input id="budget" name="budget" type="text" placeholder="e.g. USD 500–1000">
+        </div>
+
+        <div class="field">
+          <label for="metalGem">Metal / Gem Preference (optional)</label>
+          <input id="metalGem" name="metalGem" type="text" placeholder="e.g. 14K gold / sapphire">
+        </div>
+
+        <div class="field field-full">
+          <label for="message">What would you like to create?</label>
+          <textarea id="message" name="message" placeholder="Tell us your idea, story, reference, or design direction" required></textarea>
+        </div>
+
+        <div class="field field-full">
+          <label for="attachment">Optional Attachment</label>
+          <div class="file-upload-line">
+            <label class="custom-file-upload">
+              Upload Reference File
+              <input type="file" id="attachment" name="attachment" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.zip" onchange="updateFileName(this)">
+            </label>
+            <span id="file-name">No file selected</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn--submit" type="submit">Start Your Design</button>
+        <a class="btn btn--wa-inline" href="https://wa.me/8615347252138?text=Hi%20Haydee!%20I%E2%80%99d%20like%20help%20with%20a%20custom%20piece." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </form>
   </div>
 </section>
 <!-- === Composite Footer CTA END === -->
